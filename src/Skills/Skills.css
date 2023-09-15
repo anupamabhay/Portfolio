@@ -1,0 +1,97 @@
+.skills_section {
+    margin-top: 4rem;
+    padding: 0 0 100px;
+    position: relative;
+    border: 1px solid rgb(226, 127, 65);
+    /* width: var(--container-width-l); */
+    
+}
+
+.skills_container {
+    padding-right: auto;
+    padding-left: auto;
+    width: var(--container-width-l);
+    border: 1px solid rgb(218, 216, 75);
+    /* margin-right: auto;
+    margin-left: auto;   */
+
+        
+    position: relative; /* Testing display relative on bg progress bar here */
+}
+
+.skills_section .skills_item_group {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* border: 1px solid rgb(206, 60, 172); */
+
+}
+
+.skill_item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* each skill item's width above */
+
+    /* border: 1px solid rgb(134, 222, 146); */
+}
+
+.skill_info {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(24, 124, 147); */
+}
+
+.skill_info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.2;
+    color:var(--color-primary-text);
+    opacity: 1;
+    animation: showText 0.5s 1s linear forwards;
+    /* border: 1px solid rgb(137, 118, 243); */
+}
+
+.progress_line {
+    margin-top: 7px;
+    height: 10px;
+
+    width: 100%; /* bg-progress bar here */
+    
+    border-radius: 50px;
+    background-color: var(--dark-blue);
+    /* border: 1px solid rgb(198, 55, 221); */
+
+}
+
+.progress_line span {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--light-blue);
+    transition: 1s all;
+    position: absolute; /* testing abosolute display with relative on parent for it's width to not go bonkers */
+    
+    /* border: 1px solid rgb(255, 48, 62); */
+
+    
+}
+
+
+.progress_line span.animate {
+    animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
