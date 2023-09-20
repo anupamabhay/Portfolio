@@ -44,7 +44,7 @@ const About = () => {
               <a href='https://linkedin.com/in/anupamabhay' target='_blank' rel='noopener noreferrer'>
                 <button className="btn linkedin_btn">
 
-                  <FontAwesomeIcon className='social_icons' icon={brands("linkedin")} />
+                  <FontAwesomeIcon className='social_icons' icon={brands("linkedin")}/>
 
                   <span className="linkedin_btn_text"></span>
                 </button>
@@ -53,7 +53,7 @@ const About = () => {
             <a href='mailto:anupamabhay2001@gmail.com' target='_blank' rel='noopener noreferrer'>
               <button className="btn contact_btn">
                 
-                <FontAwesomeIcon className='social_icons' icon={solid("envelope")} />
+                <FontAwesomeIcon className='contact_icon' icon={solid("envelope")} />
 
                 <span className="contact_btn_text"></span>
               </button>
@@ -61,7 +61,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Skills />
+      {/* <Skills /> */}
     </>
   )
 }

@@ -6,7 +6,10 @@ import Projects from './Projects/Projects'
 function App() {
   return (
     <>
-      <About />
+      <section className="container homepage">
+        <About />
+        <Skills />
+      </section>
       {/** deleted Skills from here and moved it to About **/}
       <Projects />
     </>

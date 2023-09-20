@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
 
 *, *::before, *::after{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@
     word-wrap: break-word;
     --color-bg: #313848;
     --light-blue: #8ADFDC;
-    --dark-blue: #5E8B92;
+    --dark-blue: #5e8b92;
     --dark-purple: #735372;
     --light-purple: #8F758E;
     --bright-purple: #CDB2CC;
@@ -27,12 +28,12 @@
     --container-width-m: 85%;
     --container-width-s: 90%;
     
-    /* background-image: url(../src/Assets/bg-texture.png); */
+    background-image: url(../src/Assets/bg-texture.png);
     /* background-image: url(../src/Assets/ag-square.png); */
     background-color: var(--color-bg);
     color: var(--color-primary-text);
     line-height: 1.7;
-    
+    font-size: 16px;
 }
 
 html{
@@ -61,13 +62,16 @@ h1 {
 h4 {
     font-size: 1rem;
 }
-
+h5 {
+    font-size: 0.88rem;
+}
 strong {
     font-weight: 700;
 }
 /* .anupam {
     font-weight: 700;
 } */
+
 
 
 

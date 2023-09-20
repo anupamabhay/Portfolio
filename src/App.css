@@ -1,0 +1,12 @@
+.homepage {
+    height: 100vh;
+    /* border: 1px solid royalblue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: 0 auto;
+    
+}
+

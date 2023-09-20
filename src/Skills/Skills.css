@@ -1,97 +1,60 @@
 .skills_section {
     margin-top: 4rem;
-    padding: 0 0 100px;
-    position: relative;
-    border: 1px solid rgb(226, 127, 65);
-    /* width: var(--container-width-l); */
+    /* padding: 0 0 100px; */
     
+    /* border: 2px solid rgb(226, 127, 65); */
 }
 
 .skills_container {
     padding-right: auto;
     padding-left: auto;
-    width: var(--container-width-l);
-    border: 1px solid rgb(218, 216, 75);
-    /* margin-right: auto;
-    margin-left: auto;   */
-
-        
-    position: relative; /* Testing display relative on bg progress bar here */
+    /* width: var(--container-width-l); */
+    /* border: 1px solid rgb(218, 216, 75); */
 }
 
-.skills_section .skills_item_group {
-    margin-top: 2rem;
+.skills_groups {
+    /* border: 1px solid rgb(239, 79, 26); */
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    /* border: 1px solid rgb(206, 60, 172); */
-
 }
 
-.skill_item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    /* each skill item's width above */
-
-    /* border: 1px solid rgb(134, 222, 146); */
+.left_skills_group, .right_skills_group {
+    width: 46.5%;
+    /* border: 1px solid rgb(26, 175, 239); */
 }
 
 .skill_info {
+    /* border: 1px solid rgb(229, 72, 72); */
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid rgb(24, 124, 147); */
+    margin: 0.5rem 0;
 }
 
-.skill_info p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 2.2;
-    color:var(--color-primary-text);
-    opacity: 1;
-    animation: showText 0.5s 1s linear forwards;
-    /* border: 1px solid rgb(137, 118, 243); */
+/* .skills_bar {
+    margin-top: 0.5rem;
+} */
+
+.skills_header, .kills_header {
+    display: inline;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.progress_line {
-    margin-top: 7px;
-    height: 10px;
-
-    width: 100%; /* bg-progress bar here */
-    
-    border-radius: 50px;
-    background-color: var(--dark-blue);
-    /* border: 1px solid rgb(198, 55, 221); */
-
-}
-
-.progress_line span {
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    height: 10px;
-    border-radius: 50px;
-    background-color: var(--light-blue);
-    transition: 1s all;
-    position: absolute; /* testing abosolute display with relative on parent for it's width to not go bonkers */
-    
-    /* border: 1px solid rgb(255, 48, 62); */
-
-    
-}
-
-
-.progress_line span.animate {
-    animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
-}
-
-@keyframes showText {
-    100% {
-        opacity: 1;
+@media screen and (max-width: 369px) {
+    .skills_section {
+        margin-top: 1.5rem;
+        /* border: 1px solid limegreen; */
     }
-}
-@keyframes animate {
-    100% {
-        transform: scaleX(1);
+    .skills_groups {
+        /* border: 1px solid rgb(239, 79, 26); */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .left_skills_group, .right_skills_group {
+        width: 100%;
+    }
+    .skill_info {
+        margin: 0.35rem 0;
     }
 }
