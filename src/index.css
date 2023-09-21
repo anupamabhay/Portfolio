@@ -27,6 +27,8 @@
     --container-width-l: 75%;
     --container-width-m: 85%;
     --container-width-s: 90%;
+
+    --transition: all 600ms ease;
     
     background-image: url(../src/Assets/bg-texture.png);
     /* background-image: url(../src/Assets/ag-square.png); */
@@ -49,7 +51,6 @@ html{
 .container {
     width: var(--container-width-l);
     margin: 0 auto;
-
 }
 
 h1, h2, h3, h4, h5 {

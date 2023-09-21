@@ -1,6 +1,6 @@
 .homepage {
     height: 100vh;
-    /* border: 1px solid royalblue; */
+    border: 1px solid royalblue;
 
     display: flex;
     flex-direction: column;
@@ -9,4 +9,27 @@
     margin: 0 auto;
     
 }
+.projects_page {
+    height: 100vh;
+    border: 1px solid royalblue;
+}
 
+.section_header {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+
+    /* trying the half underline/border  */
+    display: inline-block;
+    position: relative;
+}
+.section_header::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    /* height: 1px; */
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid var(--light-blue);
+}

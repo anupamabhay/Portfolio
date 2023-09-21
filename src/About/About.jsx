@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, light, thin, duotone, icon, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 import { text } from '@fortawesome/fontawesome-svg-core'
 import { Typewriter, useTypewriter } from 'react-simple-typewriter'
-
+import 'animate.css';
 
 const About = () => {
 
@@ -29,7 +29,7 @@ const About = () => {
                 <button className="btn resume_btn">
                 
                   <FontAwesomeIcon className='social_icons' icon={solid("file-lines")} size="sm" />
-
+      
                   <span className="resume_btn_text"></span>
                 </button>
               </a>
@@ -61,7 +61,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <Skills /> */}
     </>
   )
 }

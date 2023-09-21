@@ -1,15 +1,12 @@
 .skills_section {
     margin-top: 4rem;
-    /* padding: 0 0 100px; */
-    
-    /* border: 2px solid rgb(226, 127, 65); */
+    border: 2px solid rgb(226, 127, 65);
 }
 
 .skills_container {
     padding-right: auto;
     padding-left: auto;
-    /* width: var(--container-width-l); */
-    /* border: 1px solid rgb(218, 216, 75); */
+    border: 1px solid rgb(218, 216, 75);
 }
 
 .skills_groups {
@@ -25,20 +22,12 @@
 
 .skill_info {
     /* border: 1px solid rgb(229, 72, 72); */
-    display: flex;
-    justify-content: space-between;
-    margin: 0.5rem 0;
+    margin: 0.95rem 0 0.25rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
 }
 
-/* .skills_bar {
-    margin-top: 0.5rem;
-} */
 
-.skills_header, .kills_header {
-    display: inline;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
 
 @media screen and (max-width: 369px) {
     .skills_section {
