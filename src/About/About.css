@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.social_icons {
+.about_me_btn {
   margin-right: 0.25rem;
 }
 .contact_icon {
@@ -75,7 +75,7 @@
   .linkedin_btn_text::before{
     content: "";
   }
-  .social_icons {
+  .about_me_btn {
     margin-right: 0;
   }
 }
@@ -127,11 +127,11 @@
     padding: 0.25rem;
   }
 }
-@media screen and (max-width: 369px) {
-  .social_btn {
+/* @media screen and (max-width: 369px) {
+   .about_me_btn {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
-  }
-}
+  } 
+} */

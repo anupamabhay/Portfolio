@@ -27,11 +27,9 @@
     letter-spacing: 1px;
 }
 
-
-
-@media screen and (max-width: 369px) {
+@media screen and (max-width: 600px) {
     .skills_section {
-        margin-top: 1.5rem;
+        margin-top: 2rem;
         /* border: 1px solid limegreen; */
     }
     .skills_groups {
@@ -44,6 +42,6 @@
         width: 100%;
     }
     .skill_info {
-        margin: 0.35rem 0;
+        margin: 0.5rem 0;
     }
 }

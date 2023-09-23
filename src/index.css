@@ -70,11 +70,11 @@ h5 {
 strong {
     font-weight: 700;
 }
-/* .anupam {
-    font-weight: 700;
-} */
 
-
-
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-m);
+    }
+}
 
 
