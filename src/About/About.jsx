@@ -23,7 +23,7 @@ const About = () => {
           <h3>a <span className='profession'>{text}.</span></h3>
           <div className="btn_container">
             <div className="about_me_btn">
-              <a href='https://drive.google.com/file/d/1LKW9ZsV8xXAokL1Ok8c3nma40zgKEpsU/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
+              <a href='https://drive.google.com/file/d/1JCDPjRcNXFYryBC2LnZ89-HIVzG5UexT/view?usp=drivesdk' target='_blank' rel='noopener noreferrer'>
                 <button className="btn resume_btn">                
                   <FontAwesomeIcon className='about_me_icons' icon={solid("file-lines")} size="sm" />      
                   <span className="resume_btn_text"></span>
