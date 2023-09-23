@@ -69,15 +69,16 @@
   content: "Contact";
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 497px) {
   .resume_btn_text::before,
   .github_btn_text::before,
   .linkedin_btn_text::before{
     content: "";
-  }
+  } 
+  /*
   .about_me_icons {
-    margin-right: 0;
-  }
+    margin-right: 0; 
+  } */
 }
 
 @media screen and (max-width: 341px) {
@@ -118,12 +119,9 @@
       font-size: 0.7rem;
   }
 }
-@media screen and (max-width: 288px) {  
-  .btn_container {
-    justify-content: flex-start;
-    margin: 0;
-  }
+@media screen and (max-width: 288px) { 
   .btn {
     padding: 0.25rem;
+    min-width: 2.75rem;
   }
 }
