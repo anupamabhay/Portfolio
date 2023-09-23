@@ -52,65 +52,20 @@ const Projects = () => {
         </div>
 
         <div className="projects_grid_group">
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/Weather-Report' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                Weather Report
-              </p>
-            </a>
-          </article>
-
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/Currency-Converter' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                Currency Converter
-              </p>
-            </a>
-          </article>
-          
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/Calculator-React' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                Simple Calculator
-              </p>
-            </a>
-          </article>
-
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/ToDoList-React' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                To-Do List
-              </p>
-            </a>
-          </article>
-
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/Google-Scrapper' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                Google Scraper
-              </p>
-            </a>
-          </article>
-
-          <article className='projects_item project_one'>
-            
-            <a href='https://github.com/anupamabhay/Highlighter' target='_blank' rel='noopener noreferrer'>
-              <img src={IMG1} alt="project-image" className='projects_item_img' />
-              <p className="projects_item_title">
-                Highlighter
-              </p>
-            </a>
-          </article>
+          {
+            projects_data.map(({id, image, title, github}) => {
+              return (
+                <article key={id} className='projects_item'>
+                  <a href={github} target='_blank' rel='noopener noreferrer'>
+                    <img src={image} alt={title} className='projects_item_img' />
+                    <p className="projects_item_title">
+                      {title}
+                    </p>
+                  </a>
+                </article>
+              )
+            })
+          }
         </div>
       </div>
     </section>
