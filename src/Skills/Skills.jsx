@@ -8,9 +8,6 @@ const Skills = () => {
       <div className="container skills_container">
         <div className="skills_header_container">
           <h3 className='skills_header section_header'>Skills</h3>
-          {/* <h5 className='kills_header'>KILLS</h5> 
-            OR, S
-          */}
         </div>
         
         <div className='skills_groups'>
@@ -29,21 +26,21 @@ const Skills = () => {
               <div className="skill_info">
                 <p>JavaScript</p>
               </div>
-              <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' '  animateOnRender='true' />
             </div>
             {/* HTML */}
             <div className="skills_item">
               <div className="skill_info">
                 <p>HTML</p>
               </div>
-              <ProgressBar completed={90} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={90} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* CSS */}
             <div className="skills_item">
               <div className="skill_info">
                 <p>CSS</p>
               </div>
-              <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
           </div>
 
@@ -53,36 +50,31 @@ const Skills = () => {
               <div className="skill_info">
                 <p>React</p>
               </div>
-              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' 'animateOnRender='true' />
             </div>
             {/* Node */}
             <div className="skills_item">
               <div className="skill_info">
                 <p>Node</p>
               </div>
-              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* Express */}
             <div className="skills_item">
               <div className="skill_info">
                 <p>Express</p>
               </div>
-              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* SQL */}
             <div className="skills_item">
               <div className="skill_info">
                 <p>SQL</p>
               </div>
-              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' labelColor='var(--color-bg)' labelSize='0.5rem' animateOnRender='true' />
+              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' 'animateOnRender='true' />
             </div>
-            
           </div>
-
-
-          
         </div>       
-        
       </div>
     </section>
   )

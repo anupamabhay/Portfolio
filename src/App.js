@@ -10,7 +10,6 @@ function App() {
         <About />
         <Skills />
       </section>
-      {/** deleted Skills from here and moved it to About **/}
       <section className='container projects_page'>
         <Projects />
       </section>

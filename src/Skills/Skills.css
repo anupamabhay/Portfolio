@@ -1,12 +1,12 @@
 .skills_section {
     margin-top: 4rem;
-    border: 2px solid rgb(226, 127, 65);
+    /* border: 2px solid rgb(226, 127, 65); */
 }
 
 .skills_container {
     padding-right: auto;
     padding-left: auto;
-    border: 1px solid rgb(218, 216, 75);
+    /* border: 1px solid rgb(218, 216, 75); */
 }
 
 .skills_groups {

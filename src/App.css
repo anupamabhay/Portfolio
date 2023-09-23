@@ -1,6 +1,6 @@
 .homepage {
     height: 100vh;
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
 
     display: flex;
     flex-direction: column;
@@ -10,8 +10,12 @@
     
 }
 .projects_page {
-    height: 100vh;
-    border: 1px solid royalblue;
+    /* height: 100vh; */
+    /* border: 1px solid royalblue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section_header {

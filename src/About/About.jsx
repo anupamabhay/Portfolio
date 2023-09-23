@@ -1,10 +1,8 @@
 import React from 'react'
 import './About.css'
-import Skills from '../Skills/Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, light, thin, duotone, icon, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
-import { text } from '@fortawesome/fontawesome-svg-core'
-import { Typewriter, useTypewriter } from 'react-simple-typewriter'
+import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
+import { useTypewriter } from 'react-simple-typewriter'
 import 'animate.css';
 
 const About = () => {
@@ -26,35 +24,27 @@ const About = () => {
           <div className="btn_container">
             <div className="social_btn">
               <a href='https://drive.google.com/file/d/1LKW9ZsV8xXAokL1Ok8c3nma40zgKEpsU/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
-                <button className="btn resume_btn">
-                
-                  <FontAwesomeIcon className='social_icons' icon={solid("file-lines")} size="sm" />
-      
+                <button className="btn resume_btn">                
+                  <FontAwesomeIcon className='social_icons' icon={solid("file-lines")} size="sm" />      
                   <span className="resume_btn_text"></span>
                 </button>
               </a>
               <a href='https://github.com/anupamabhay' target='_blank' rel='noopener noreferrer'>
                 <button className="btn github_btn">
-
-                  <FontAwesomeIcon className='social_icons' icon={brands("github")} />
-                  
+                  <FontAwesomeIcon className='social_icons' icon={brands("github")} />                  
                   <span className="github_btn_text"></span>
                 </button>
               </a>
               <a href='https://linkedin.com/in/anupamabhay' target='_blank' rel='noopener noreferrer'>
                 <button className="btn linkedin_btn">
-
                   <FontAwesomeIcon className='social_icons' icon={brands("linkedin")}/>
-
                   <span className="linkedin_btn_text"></span>
                 </button>
               </a>
             </div>
             <a href='mailto:anupamabhay2001@gmail.com' target='_blank' rel='noopener noreferrer'>
               <button className="btn contact_btn">
-                
                 <FontAwesomeIcon className='contact_icon' icon={solid("envelope")} />
-
                 <span className="contact_btn_text"></span>
               </button>
             </a>
