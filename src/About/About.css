@@ -75,10 +75,9 @@
   .linkedin_btn_text::before{
     content: "";
   } 
-  /*
   .about_me_icons {
     margin-right: 0; 
-  } */
+  }
 }
 
 @media screen and (max-width: 341px) {
