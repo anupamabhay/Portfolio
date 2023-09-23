@@ -54,7 +54,7 @@
 @media screen and (max-width: 1024px) {
     .projects_grid_group {
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 }
 
