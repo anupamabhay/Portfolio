@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
 
 *, *::before, *::after{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -15,6 +14,7 @@
 }
 
 :root{
+    font-family: 'Josefin Sans', sans-serif;
     word-wrap: break-word;
     --color-bg: #313848;
     --light-blue: #8ADFDC;
@@ -28,6 +28,11 @@
     --container-width-l: 75%;
     --container-width-m: 85%;
     --container-width-s: 90%;
+
+    --button-font-family: 'Urbanist';
+    --heading-font-family: 'Josefin Sans';
+    --body-font-family: 'Nunito';
+    --name-header-font-family: 'Caveat';
 
     --transition: all 600ms ease;
     

@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
+    font-family: var(--body-font-family);
 }
 
 .left_skills_group, .right_skills_group {
