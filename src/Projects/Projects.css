@@ -30,7 +30,7 @@
     border-radius: 1rem;
     transition: var(--transition);
     border: 1px solid transparent;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
 
 }
 .project_item_info {

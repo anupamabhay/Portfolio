@@ -34,7 +34,7 @@ const projects_data = [
     id: 5,
     image: IMG1,
     title: 'Google Scraper',
-    github: 'https://github.com/anupamabhay/Google-Scrapper'
+    github: 'https://github.com/anupamabhay/Google-Scraper'
   },
   {
     id: 6,

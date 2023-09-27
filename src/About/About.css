@@ -27,6 +27,8 @@
 
   font-family: var(--button-font-family);
   letter-spacing: 0.5px;
+
+  backdrop-filter: blur(5px);
 }
 
 .btn:hover {
