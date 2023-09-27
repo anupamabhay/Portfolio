@@ -35,6 +35,7 @@
     --name-header-font-family: 'Caveat';
 
     --transition: all 600ms ease;
+    --transition-icon: all 200ms ease-in;
     
     background-image: url(../src/Assets/bg-texture.png);
     /* background-image: url(../src/Assets/ag-square.png); */

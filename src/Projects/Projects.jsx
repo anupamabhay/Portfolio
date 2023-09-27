@@ -2,6 +2,8 @@ import React from 'react'
 import './Projects.css'
 import IMG1 from '../Assets/project-placeholder.png'
 import img_scraper from '../Assets/google-scraper.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 
 const projects_data = [
   {
@@ -58,9 +60,14 @@ const Projects = () => {
                 <article key={id} className='projects_item'>
                   <a href={github} target='_blank' rel='noopener noreferrer'>
                     <img src={image} alt={title} className='projects_item_img' />
-                    <p className="projects_item_title">
-                      {title}
-                    </p>
+                    <div className="project_item_info">
+                      <p className="projects_item_title">
+                        {title} 
+                      </p>
+                      <span className="link_icon">
+                        <FontAwesomeIcon icon={solid("arrow-up-right-from-square")} size='sm' style={{color: "#8ADFDC",}} />
+                      </span>
+                    </div>
                   </a>
                 </article>
               )
