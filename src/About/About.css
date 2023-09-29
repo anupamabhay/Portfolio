@@ -110,6 +110,9 @@
   .btn {
     width: 6.5rem;
   }
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 441px) {  

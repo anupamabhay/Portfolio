@@ -57,8 +57,8 @@ const Projects = () => {
           {
             projects_data.map(({id, image, title, github}) => {
               return (
-                <article key={id} className='projects_item'>
-                  <a href={github} target='_blank' rel='noopener noreferrer'>
+                <article key={id} className='projects_item_container'>
+                  <a href={github} target='_blank' rel='noopener noreferrer' className='project_item' >
                     <img src={image} alt={title} className='projects_item_img' />
                     <div className="project_item_info">
                       <p className="projects_item_title">
