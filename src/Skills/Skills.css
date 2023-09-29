@@ -14,21 +14,28 @@
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    font-family: var(--body-font-family);
+    /* font-family: var(--body-font-family); */
+    padding: 1rem 0;
+}
+.skill_item_title {
+    font-weight: 500;
 }
 
 .left_skills_group, .right_skills_group {
-    width: 50%;
+    width: 100%;
     /* border: 1px solid rgb(26, 175, 239); */
+    
 }
 
 .skill_info {
     /* border: 1px solid rgb(229, 72, 72); */
-    margin: 0.95rem 0 0.25rem;
-    /* text-transform: uppercase; */
-    letter-spacing: 1px;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
-
+.skills_bar {
+    margin-bottom: 0.95rem;
+}
 @media screen and (max-width: 1024px) {
     .skills_groups {
         gap: 1.5rem;

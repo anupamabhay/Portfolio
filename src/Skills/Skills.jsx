@@ -16,7 +16,7 @@ const Skills = () => {
             {/* Java */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>Java</p>
+                <p className='skill_item_title'>Java</p>
               </div>
               {/* labelColor='var(--color-bg)' labelSize='0.5rem' */}
               <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' animateOnRender='true' customLabel=' ' />
@@ -24,21 +24,21 @@ const Skills = () => {
             {/* JavaScript */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>JavaScript</p>
+                <p className='skill_item_title'>JavaScript</p>
               </div>
               <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' '  animateOnRender='true' />
             </div>
             {/* HTML */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>HTML</p>
+                <p className='skill_item_title'>HTML</p>
               </div>
               <ProgressBar completed={90} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* CSS */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>CSS</p>
+                <p className='skill_item_title'>CSS</p>
               </div>
               <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
@@ -48,28 +48,28 @@ const Skills = () => {
             {/* React */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>React</p>
+                <p className='skill_item_title'>React</p>
               </div>
               <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' 'animateOnRender='true' />
             </div>
             {/* Node */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>Node</p>
+                <p className='skill_item_title'>Node</p>
               </div>
               <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* Express */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>Express</p>
+                <p className='skill_item_title'>Express</p>
               </div>
               <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' ' animateOnRender='true' />
             </div>
             {/* SQL */}
             <div className="skills_item">
               <div className="skill_info">
-                <p>SQL</p>
+                <p className='skill_item_title'>SQL</p>
               </div>
               <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.25px' customLabel=' 'animateOnRender='true' />
             </div>
