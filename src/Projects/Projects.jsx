@@ -1,44 +1,48 @@
 import React from 'react'
 import './Projects.css'
-import IMG1 from '../Assets/project-placeholder.png'
-import img_scraper from '../Assets/google-scraper.png'
+import weather_img from '../Assets/weather_img.png'
+import currency_img from '../Assets/currency_img.jpg'
+import calculator_img from '../Assets/calculator_img.png'
+import todo_img from '../Assets/todo2_img.png'
+import scraper_img from '../Assets/scraper_img.png'
+import highlighter_img from '../Assets/highlighter_img.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 
 const projects_data = [
   {
     id: 1,
-    image: IMG1,
+    image: weather_img,
     title: 'Weather Report',
     github: 'https://github.com/anupamabhay/Weather-Report'
   },
   {
     id: 2,
-    image: IMG1,
+    image: currency_img,
     title: 'Currency Converter',
     github: 'https://github.com/anupamabhay/Currency-Converter'
   },
   {
     id: 3,
-    image: IMG1,
+    image: calculator_img,
     title: 'Simple Calculator',
     github: 'https://github.com/anupamabhay/Calculator-React'
   },
   {
     id: 4,
-    image: IMG1,
+    image: todo_img,
     title: 'To-Do List',
     github: 'https://github.com/anupamabhay/ToDoList-React'
   },
   {
     id: 5,
-    image: IMG1,
+    image: scraper_img,
     title: 'Google Scraper',
     github: 'https://github.com/anupamabhay/Google-Scraper'
   },
   {
     id: 6,
-    image: IMG1,
+    image: highlighter_img,
     title: 'Highlighter',
     github: 'https://github.com/anupamabhay/Highlighter'
   }

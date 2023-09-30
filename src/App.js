@@ -13,6 +13,9 @@ function App() {
       <section className='container projects_page'>
         <Projects />
       </section>
+      <footer className='footer'>
+        {'<> Anupam Abhay </>'}
+      </footer>
     </>
   );
 }
