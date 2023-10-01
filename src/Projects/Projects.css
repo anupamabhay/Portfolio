@@ -75,7 +75,7 @@
     object-fit: cover;
     filter: brightness(75%);
     filter: contrast(85%);
-    filter: grayscale(80%);
+    filter: grayscale(95%);
 
 }
 .projects_item_img:hover {
