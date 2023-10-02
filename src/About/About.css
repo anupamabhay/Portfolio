@@ -1,6 +1,8 @@
 .greet {
   /* border: 1px solid lime; */
   margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .greet_exclaimation {
@@ -78,6 +80,13 @@
   }
 }
 
+@media screen and (max-width: 418px) {
+  h3 {
+    /* font-size: 1.17rem; */
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .about_me_icons {
     padding: 0.5rem 1rem;
@@ -89,48 +98,3 @@
     padding: 0.5rem 0.75rem;
   }
 }
-
-/* 
-@media screen and (min-width: 789px) {
-  .btn {
-    width: 6.5rem;
-  }
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 441px) {  
-  .name_header {
-    font-size: 2.4rem;
-  }
-  h1 {
-    font-size: 1.73rem;
-  }
-  h3 {
-    font-size: 0.9rem;
-  }
-  p {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (max-width: 382px) {  
-  .name_header {
-    font-size: 1.75rem;
-  } 
-  h1 {
-      font-size: 1.24rem;
-  }
-  h3 {
-      font-size: 0.8rem;
-  }
-  p {
-      font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 288px) { 
-  .btn {
-    padding: 0.25rem;
-    min-width: 2.75rem;
-  }
-} */
