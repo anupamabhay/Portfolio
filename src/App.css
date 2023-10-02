@@ -1,5 +1,5 @@
 .homepage {
-    height: 100vh;
+    min-height: 100vh;
     /* border: 1px solid royalblue; */
 
     display: flex;
@@ -42,6 +42,6 @@
     text-transform: capitalize;
     font-weight: 600;
     color: var(--light-blue);
-    margin-bottom: 1rem;
+    margin: 1rem auto;
     letter-spacing: 1.5px;
 }

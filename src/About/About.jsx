@@ -8,45 +8,50 @@ import 'animate.css';
 const About = () => {
 
   const [text] = useTypewriter({
-    words: ["Full-Stack Developer", "Software Engineer"],
+    words: [" there"],
     loop: true,
-    typeSpeed: 50,
-    deleteSpeed: 40,
-    delaySpeed: 5000,
+    typeSpeed: 100,
+    deleteSpeed: 100,
+    delaySpeed: 4000,
   });
 
   return (
     <>
       <section className='about_section'>
         <div className="container about_container">
-          <h1 className="about_me">Hey, I'm <span className='name_header'>Anupam</span></h1>
-          <h3>a <span className='profession'>{text}<span className='profession_dot'>.</span></span></h3>
+          <div className="greet">
+            <h1 className="greet_hey">
+              Hey
+              <span className='greet_typewriter'>
+                {text}
+              </span>
+              <span className='greet_exclaimation'>
+                !
+              </span>
+            </h1>
+          </div>
+          <div className="about_me">
+            <h3 className="about_me_para">
+              I’m 
+              <span className='about_me_name'>
+                {' Anupam Abhay'}
+              </span>
+                , a software engineer slash full-stack developer from India. Feel free to check out everything about me below.
+            </h3>
+          </div>
+
           <div className="btn_container">
-            <div className="about_me_btn">
-              <a href='https://drive.google.com/file/d/1JCDPjRcNXFYryBC2LnZ89-HIVzG5UexT/view?usp=drivesdk' target='_blank' rel='noopener noreferrer'>
-                <button className="btn resume_btn">                
-                  <FontAwesomeIcon className='about_me_icons' icon={solid("file-lines")} size="sm" />      
-                  <span className="resume_btn_text"></span>
-                </button>
-              </a>
-              <a href='https://github.com/anupamabhay' target='_blank' rel='noopener noreferrer'>
-                <button className="btn github_btn">
-                  <FontAwesomeIcon className='about_me_icons' icon={brands("github")} />                  
-                  <span className="github_btn_text"></span>
-                </button>
-              </a>
-              <a href='https://linkedin.com/in/anupamabhay' target='_blank' rel='noopener noreferrer'>
-                <button className="btn linkedin_btn">
-                  <FontAwesomeIcon className='about_me_icons' icon={brands("linkedin")}/>
-                  <span className="linkedin_btn_text"></span>
-                </button>
-              </a>
-            </div>
-            <a href='mailto:anupamabhay2001@gmail.com' target='_blank' rel='noopener noreferrer'>
-              <button className="btn contact_btn">
-                <FontAwesomeIcon className='contact_icon' icon={solid("envelope")} />
-                <span className="contact_btn_text"></span>
-              </button>
+            <a className='about_me_icon' href="https://drive.google.com/file/d/1JCDPjRcNXFYryBC2LnZ89-HIVzG5UexT/view?usp=drivesdk" target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='about_me_icons' icon={solid("file-lines")} size="lg" /> 
+            </a>
+            <a className='about_me_icon' href="https://github.com/anupamabhay" target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='about_me_icons' icon={brands("github")} size="lg" />
+            </a>
+            <a className='about_me_icon' href="https://linkedin.com/in/anupamabhay" target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='about_me_icons' icon={brands("linkedin")} size="lg" /> 
+            </a>
+            <a className='about_me_icon' href="mailto:anupamabhay2001@gmail.com" target='_blank' rel='noopener noreferrer'>
+              <FontAwesomeIcon className='about_me_icons' icon={solid("envelope")} size="lg" /> 
             </a>
           </div>
         </div>

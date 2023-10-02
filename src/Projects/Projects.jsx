@@ -54,7 +54,7 @@ const Projects = () => {
     <section className="projects_section">
       <div className="container projects_container">
         <div className="project_header_container">
-          <h3 className="projects_header section_header">Projects</h3>
+          <h2 className="projects_header section_header">Projects</h2>
         </div>
 
         <div className="projects_grid_group">
@@ -65,9 +65,9 @@ const Projects = () => {
                   <a href={github} target='_blank' rel='noopener noreferrer' className='project_item' >
                     <img src={image} alt={title} className='projects_item_img' />
                     <div className="project_item_info">
-                      <p className="projects_item_title">
+                      <h4 className="projects_item_title">
                         {title} 
-                      </p>
+                      </h4>
                       <span className="link_icon">
                         <FontAwesomeIcon icon={solid("arrow-up-right-from-square")} size='sm' style={{color: "#8ADFDC",}} />
                       </span>

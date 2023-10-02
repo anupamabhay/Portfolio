@@ -1,6 +1,6 @@
 .projects_section {
     /* border: 2px solid rgb(226, 127, 65); */
-    margin: 0 auto;
+    margin-top: 2rem;
     width: 100%;
 }
 
@@ -16,9 +16,10 @@
     justify-content: space-between;
     gap: 2rem;
 
-    margin-top: 1.25rem;
-    margin-bottom: 3.5rem;
-    padding: 1rem 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* padding: 1rem 0 1rem; */
+    /* border: 1px solid green; */
 }
 
 .projects_item_container {
@@ -75,7 +76,7 @@
     object-fit: cover;
     filter: brightness(75%);
     filter: contrast(85%);
-    filter: grayscale(80%);
+    filter: grayscale(90%);
 
 }
 .projects_item_img:hover {
