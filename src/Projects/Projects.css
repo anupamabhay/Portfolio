@@ -64,6 +64,7 @@
     text-transform: uppercase;
     /* font-size: 0.85rem; */
     padding: 0 0 0 1rem;
+    font-weight: 600;
 }
 
 .projects_item_img {

@@ -21,7 +21,7 @@
     margin-top: 1rem;
 }
 .skill_item_title {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .left_skills_group, .right_skills_group {
@@ -36,9 +36,11 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
+
 .skills_bar {
     margin-bottom: 1rem;
 }
+
 @media screen and (max-width: 1024px) {
     .skills_groups {
         gap: 1.5rem;
