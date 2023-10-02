@@ -71,7 +71,7 @@ const Skills = () => {
               <div className="skill_info">
                 <h4 className='skill_item_title'>SQL</h4>
               </div>
-              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' 'animateOnRender='true' />
+              <ProgressBar completed={70} className='skills_bar sql_skill_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' 'animateOnRender='true' />
             </div>
           </div>
         </div>       

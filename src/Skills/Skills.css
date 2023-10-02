@@ -76,4 +76,7 @@
     .skills_bar {
         margin-bottom: 0;
     }
+    .sql_skill_bar {
+        margin-bottom: 1rem;
+    }
 }
