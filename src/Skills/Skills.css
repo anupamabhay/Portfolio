@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 600px) {
     .skills_section {
-        margin-top: 2rem;
+        margin-top: 1rem;
         /* border: 1px solid limegreen; */
     }
     .skills_groups {
@@ -65,8 +65,15 @@
     }
     .skill_info {
         margin: 0.5rem 0;
+        /* border: 1px solid pink; */
     }
     .css_skill_bar {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .skills_bar {
         margin-bottom: 0;
     }
 }
