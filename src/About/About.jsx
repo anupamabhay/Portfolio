@@ -36,7 +36,7 @@ const About = () => {
               <span className='about_me_name'>
                 {' Anupam Abhay'}
               </span>
-                , a software engineer slash full-stack developer from India. Feel free to check out everything about me below.
+                , a software engineer slash full-stack developer from India. Feel free to check everything out below.
             </h3>
           </div>
 
