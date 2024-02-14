@@ -37,7 +37,7 @@
     --transition: all 600ms ease;
     --transition-icon: all 200ms ease-in;
     
-    background-image: url(../src/Assets/bg-texture.png);
+    /* background-image: url(../src/Assets/bg-texture.png); */
     /* background-image: url(../src/Assets/ag-square.png); */
     background-color: var(--color-bg);
     color: var(--color-primary-text);
