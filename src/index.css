@@ -23,7 +23,8 @@
     --light-purple: #8F758E;
     --bright-purple: #CDB2CC;
     --color-primary-text: #ffffff;
-    --darker-bg: #232833;
+    /* --darker-bg: #232833; */
+    --darker-bg: #1a1f28;
     
     --container-width-l: 75%;
     --container-width-m: 85%;
