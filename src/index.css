@@ -16,7 +16,7 @@
     font-family: 'Urbanist', sans-serif;
     word-wrap: break-word;
     /* --color-bg: #313848; */
-    --color-bg: #272d3a;
+    --color-bg: #171a21;
     --light-blue: #8ADFDC;
     --dark-blue: #5e8b92;
     --dark-purple: #735372;
@@ -24,7 +24,7 @@
     --bright-purple: #CDB2CC;
     --color-primary-text: #ffffff;
     /* --darker-bg: #232833; */
-    --darker-bg: #1a1f28;
+    --darker-bg: #0a0c0f;
     
     --container-width-l: 75%;
     --container-width-m: 85%;
@@ -44,6 +44,11 @@
     color: var(--color-primary-text);
     line-height: 1.7;
     font-size: 16px;
+}
+::selection {
+    user-select: none;
+    /* color: var(--color-bg);
+    background: var(--light-blue); */
 }
 
 html{
