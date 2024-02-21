@@ -42,6 +42,6 @@
     text-transform: capitalize;
     font-weight: 600;
     color: var(--light-blue);
-    margin: 1rem auto;
+    margin: 2rem auto 1rem;
     letter-spacing: 1.5px;
 }
