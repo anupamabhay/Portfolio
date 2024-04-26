@@ -63,39 +63,31 @@
     letter-spacing: 0.5px;
   }
   h1 {
-    /* font-size: 2rem; */
     font-size: 1.5rem;
   }
   h2 {
-    /* font-size: 1.5rem; */
     font-size: 1.125rem;
   }
   h3 {
-    /* font-size: 1.17rem; */
     font-size: 0.8775rem;
     font-weight: 600;
   }
   h4 {
-    /* font-size: 1rem; */
     font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 418px) {
   h1 {
-    /* font-size: 2rem; */
     font-size: 1.35rem;
   }
   h2 {
-    /* font-size: 1.5rem; */
     font-size: 1.013rem;
   }
   h3 {
-    /* font-size: 1.17rem; */
     font-size: 0.79rem;
   }
   h4 {
-    /* font-size: 1rem; */
     font-size: 0.675rem;
   }
 }
