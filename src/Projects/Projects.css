@@ -11,6 +11,7 @@
 }
 
 .projects_grid_group {
+    /* border: 1px solid green; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
@@ -18,14 +19,11 @@
 
     margin-top: 1rem;
     margin-bottom: 2rem;
-    /* padding: 1rem 0 1rem; */
-    /* border: 1px solid green; */
 }
 
 .projects_item_container {
     /* background-color: var(--darker-bg); */
     background-color: rgba(200, 200, 200, 0.21);
-    /* padding: 0 0 1rem; */
     border-radius: 1rem;
     transition: var(--transition);
     border: 1px solid transparent;
@@ -62,7 +60,6 @@
     color: var(--color-primary-text);
     letter-spacing: 1px;
     text-transform: uppercase;
-    /* font-size: 0.85rem; */
     padding: 0 0 0 1rem;
     font-weight: 600;
 }
