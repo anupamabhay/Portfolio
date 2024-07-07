@@ -25,9 +25,8 @@
 }
 
 .left_skills_group, .right_skills_group {
-    width: 100%;
     /* border: 1px solid rgb(26, 175, 239); */
-    
+    width: 100%;
 }
 
 .skill_info {
@@ -49,9 +48,10 @@
 
 @media screen and (max-width: 600px) {
     .skills_section {
-        margin-top: 1rem;
         /* border: 1px solid limegreen; */
+        margin-top: 1rem;
     }
+    
     .skills_groups {
         /* border: 1px solid rgb(239, 79, 26); */
         display: flex;
@@ -59,16 +59,18 @@
         gap: 0;
         padding: 1rem 1.5rem;
     }
+    
     .left_skills_group, .right_skills_group {
         /* border: 1px solid pink; */
         width: 100%;
         gap: 0;
-        
     }
+    
     .skill_info {
         margin: 0.5rem 0;
         /* border: 1px solid pink; */
     }
+    
     .css_skill_bar {
         margin-bottom: 0;
     }
@@ -78,6 +80,7 @@
     .skills_bar {
         margin-bottom: 0;
     }
+    
     .sql_skill_bar {
         margin-bottom: 1rem;
     }
