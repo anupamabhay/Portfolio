@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           <div className="btn_container">
-            <a className='about_me_icon' href="https://drive.google.com/file/d/1JCDPjRcNXFYryBC2LnZ89-HIVzG5UexT/view?usp=drivesdk" target='_blank' rel='noopener noreferrer'>
+            <a className='about_me_icon' href="https://drive.google.com/file/d/1-P687nGHZKEMMAFU_yG0XhrlNP5sFWly/view?usp=sharing" target='_blank' rel='noopener noreferrer'>
               <FontAwesomeIcon className='about_me_icons' icon={solid("file-lines")} size="lg" /> 
             </a>
             <a className='about_me_icon' href="https://github.com/anupamabhay" target='_blank' rel='noopener noreferrer'>
