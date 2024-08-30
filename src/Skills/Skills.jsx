@@ -21,6 +21,7 @@ const Skills = () => {
               {/* labelColor='var(--color-bg)' labelSize='0.5rem' */}
               <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' animateOnRender='true' customLabel=' ' />
             </div>
+
             {/* JavaScript */}
             <div className="skills_item">
               <div className="skill_info">
@@ -28,6 +29,7 @@ const Skills = () => {
               </div>
               <ProgressBar completed={80} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' '  animateOnRender='true' />
             </div>
+
             {/* HTML */}
             <div className="skills_item">
               <div className="skill_info">
@@ -35,6 +37,7 @@ const Skills = () => {
               </div>
               <ProgressBar completed={90} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' ' animateOnRender='true' />
             </div>
+
             {/* CSS */}
             <div className="skills_item">
               <div className="skill_info">
@@ -52,26 +55,29 @@ const Skills = () => {
               </div>
               <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' 'animateOnRender='true' />
             </div>
-            {/* Node */}
-            <div className="skills_item">
-              <div className="skill_info">
-                <h4 className='skill_item_title'>Node</h4>
-              </div>
-              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' ' animateOnRender='true' />
-            </div>
-            {/* Express */}
-            <div className="skills_item">
-              <div className="skill_info">
-                <h4 className='skill_item_title'>Express</h4>
-              </div>
-              <ProgressBar completed={60} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' ' animateOnRender='true' />
-            </div>
+
             {/* SQL */}
             <div className="skills_item">
               <div className="skill_info">
                 <h4 className='skill_item_title'>SQL</h4>
               </div>
               <ProgressBar completed={70} className='skills_bar sql_skill_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' 'animateOnRender='true' />
+            </div>
+
+            {/* Git */}
+            <div className="skills_item">
+              <div className="skill_info">
+                <h4 className='skill_item_title'>Git</h4>
+              </div>
+              <ProgressBar completed={70} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' ' animateOnRender='true' />
+            </div>
+
+            {/* Google */}
+            <div className="skills_item">
+              <div className="skill_info">
+                <h4 className='skill_item_title'>Google-ing</h4>
+              </div>
+              <ProgressBar completed={90} className='skills_bar' baseBgColor='var(--dark-blue)' bgColor='var(--light-blue)' height='10.5px' customLabel=' ' animateOnRender='true' />
             </div>
           </div>
         </div>       
