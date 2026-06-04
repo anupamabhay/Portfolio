@@ -6,13 +6,20 @@ export function Hero() {
       id="hero"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/8 via-transparent to-surface pointer-events-none" />
-
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-blob-drift animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/12 rounded-full blur-3xl animate-blob-drift-2 animate-pulse-glow" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: [
+            "radial-gradient(ellipse 80% 60% at 20% 30%, rgba(255, 109, 31, 0.10) 0%, transparent 50%)",
+            "radial-gradient(ellipse 60% 70% at 80% 70%, rgba(255, 109, 31, 0.07) 0%, transparent 50%)",
+            "radial-gradient(ellipse 50% 50% at 45% 50%, rgba(255, 109, 31, 0.05) 0%, transparent 40%)",
+          ].join(","),
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-accent/4 via-transparent to-surface pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-edge bg-surface-secondary text-sm text-content-secondary mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-edge bg-surface-secondary text-sm text-content-secondary mb-8 shadow-sm">
           <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -20,7 +27,7 @@ export function Hero() {
           <span className="leading-none">{personal.location}</span>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6 tracking-tight">
           Hi, I'm{" "}
           <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
             {personal.name}

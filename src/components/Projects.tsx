@@ -5,9 +5,9 @@ export function Projects() {
   const { ref, inView } = useInView()
 
   return (
-    <section id="projects" className="py-24 px-6 bg-surface-secondary/50" ref={ref}>
+    <section id="projects" className="py-28 px-6" ref={ref}>
       <div className={`max-w-6xl mx-auto transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <h2 className="text-3xl sm:text-4xl font-bold text-content mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-content mb-4 tracking-tight">
           Featured <span className="text-accent">Projects</span>
         </h2>
         <p className="text-content-muted text-sm mb-16 max-w-md">
@@ -18,7 +18,7 @@ export function Projects() {
           {projects.map((project, i) => (
             <div
               key={project.title}
-              className="group rounded-xl border border-edge bg-surface-tertiary/30 overflow-hidden hover:border-accent/30 transition-all"
+              className="group rounded-xl border border-edge bg-surface-secondary shadow-sm overflow-hidden hover:border-accent/30 transition-all"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="relative h-48 overflow-hidden">

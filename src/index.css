@@ -16,29 +16,29 @@
 
 :root {
   color-scheme: light dark;
-  --theme-surface: #252422;
-  --theme-surface-secondary: #2e2b28;
-  --theme-surface-tertiary: #403d39;
+  --theme-surface: #1c1a19;
+  --theme-surface-secondary: #252322;
+  --theme-surface-tertiary: #333130;
   --theme-content: #fffcf2;
   --theme-content-secondary: #ccc5b9;
   --theme-content-muted: #8a8580;
-  --theme-edge: #403d39;
-  --theme-accent: #eb5e28;
-  --theme-accent-light: #f07d4f;
-  --theme-accent-dark: #d14e1a;
+  --theme-edge: #333130;
+  --theme-accent: #ff6d1f;
+  --theme-accent-light: #ff8540;
+  --theme-accent-dark: #d95a14;
 }
 
 :root.light {
-  --theme-surface: #fffcf2;
+  --theme-surface: #f7f5f0;
   --theme-surface-secondary: #ffffff;
-  --theme-surface-tertiary: #e8e4dc;
-  --theme-content: #252422;
+  --theme-surface-tertiary: #e6e2da;
+  --theme-content: #1c1a19;
   --theme-content-secondary: #403d39;
   --theme-content-muted: #8a8580;
-  --theme-edge: #e8e4dc;
-  --theme-accent: #eb5e28;
-  --theme-accent-light: #f07d4f;
-  --theme-accent-dark: #c94d1e;
+  --theme-edge: #e6e2da;
+  --theme-accent: #ff6d1f;
+  --theme-accent-light: #ff8540;
+  --theme-accent-dark: #d95a14;
 }
 
 html {
@@ -64,40 +64,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes blob-drift {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(50px, -35px) scale(1.15); }
-  50% { transform: translate(-25px, 25px) scale(0.85); }
-  75% { transform: translate(35px, 40px) scale(1.05); }
-}
-
-@keyframes blob-drift-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(-40px, 50px) scale(1.1); }
-  50% { transform: translate(30px, -30px) scale(0.9); }
-  75% { transform: translate(-50px, -40px) scale(1.15); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.8; }
-}
-
 @keyframes slide-up {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-blob-drift {
-  animation: blob-drift 20s ease-in-out infinite;
-}
-
-.animate-blob-drift-2 {
-  animation: blob-drift-2 25s ease-in-out infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 4s ease-in-out infinite;
 }
 
 .animate-slide-up {
