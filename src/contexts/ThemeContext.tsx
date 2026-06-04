@@ -56,7 +56,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem(STORAGE_KEY, t)
     } catch {
-      void 0
+      // not persisted
     }
     const r = resolveTheme(t)
     setThemeState(t)

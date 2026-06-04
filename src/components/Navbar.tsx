@@ -11,7 +11,7 @@ const links = [
 ]
 
 function ThemeToggle() {
-  const { theme, cycleTheme } = useTheme()
+  const { theme, resolved, cycleTheme } = useTheme()
 
   const icon = {
     light: (
@@ -35,7 +35,8 @@ function ThemeToggle() {
     <button
       onClick={cycleTheme}
       className="w-9 h-9 rounded-lg border border-edge bg-surface-secondary flex items-center justify-center text-content-secondary hover:text-content transition-all"
-      aria-label={`Theme: ${theme}`}
+      aria-label={`Switch to ${resolved === "dark" ? "light" : "dark"} mode`}
+      aria-pressed={resolved === "dark"}
       title={`Theme: ${theme}`}
     >
       {icon[theme]}

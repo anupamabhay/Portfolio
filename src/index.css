@@ -15,12 +15,13 @@
 }
 
 :root {
+  color-scheme: light dark;
   --theme-surface: #132a13;
   --theme-surface-secondary: #1a3a1a;
   --theme-surface-tertiary: #234523;
   --theme-content: #ecf39e;
   --theme-content-secondary: #b0c080;
-  --theme-content-muted: #5a7a4a;
+  --theme-content-muted: #8aaa78;
   --theme-edge: #31572c;
   --theme-accent: #4f772d;
   --theme-accent-light: #90a955;
@@ -44,12 +45,17 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  *, *::before, *::after {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
   background: var(--theme-surface);
   color: var(--theme-content);
-  transition: background-color 0.3s, color 0.3s;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
