@@ -2,43 +2,104 @@
 
 @theme {
   --color-surface: var(--theme-surface);
-  --color-surface-secondary: var(--theme-surface-secondary);
-  --color-surface-tertiary: var(--theme-surface-tertiary);
-  --color-content: var(--theme-content);
-  --color-content-secondary: var(--theme-content-secondary);
-  --color-content-muted: var(--theme-content-muted);
-  --color-edge: var(--theme-edge);
-  --color-accent: var(--theme-accent);
-  --color-accent-light: var(--theme-accent-light);
-  --color-accent-dark: var(--theme-accent-dark);
+  --color-surface-container-lowest: var(--theme-surface-container-lowest);
+  --color-surface-container-low: var(--theme-surface-container-low);
+  --color-surface-container: var(--theme-surface-container);
+  --color-on-surface: var(--theme-on-surface);
+  --color-on-surface-variant: var(--theme-on-surface-variant);
+  --color-primary: var(--theme-primary);
+  --color-on-primary: var(--theme-on-primary);
+  --color-outline-variant: var(--theme-outline-variant);
   --font-sans: "Sora", system-ui, -apple-system, sans-serif;
+  --spacing-container-max: 1200px;
+  --spacing-section-gap: 160px;
+  --radius-sm: 0.125rem;
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
 }
 
 :root {
-  color-scheme: light dark;
-  --theme-surface: #121212;
-  --theme-surface-secondary: #1e1e1e;
-  --theme-surface-tertiary: #2c2c2c;
-  --theme-content: #fffcf2;
-  --theme-content-secondary: #ccc5b9;
-  --theme-content-muted: #8a8580;
-  --theme-edge: #2c2c2c;
-  --theme-accent: #ff6d1f;
-  --theme-accent-light: #ff8540;
-  --theme-accent-dark: #d95a14;
+  color-scheme: dark;
+  --theme-surface: #131314;
+  --theme-surface-container-lowest: #0e0e0f;
+  --theme-surface-container-low: #1c1b1c;
+  --theme-surface-container: #201f20;
+  --theme-on-surface: #e5e2e3;
+  --theme-on-surface-variant: #e1bfb2;
+  --theme-primary: #ff6d1f;
+  --theme-on-primary: #581e00;
+  --theme-outline-variant: #353436;
 }
 
 :root.light {
-  --theme-surface: #f7f5f0;
-  --theme-surface-secondary: #ffffff;
-  --theme-surface-tertiary: #e6e2da;
-  --theme-content: #121212;
-  --theme-content-secondary: #403d39;
-  --theme-content-muted: #8a8580;
-  --theme-edge: #e6e2da;
-  --theme-accent: #ff6d1f;
-  --theme-accent-light: #ff8540;
-  --theme-accent-dark: #d95a14;
+  color-scheme: light;
+  --theme-surface: #f8f7f4;
+  --theme-surface-container-lowest: #ffffff;
+  --theme-surface-container-low: #f0efe8;
+  --theme-surface-container: #e8e6e0;
+  --theme-on-surface: #1c1c1e;
+  --theme-on-surface-variant: #5c5a55;
+  --theme-primary: #ff6d1f;
+  --theme-on-primary: #ffffff;
+  --theme-outline-variant: #d8d4cc;
+}
+
+@utility text-headline-xl {
+  font-size: 72px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+@utility text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+@utility text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+@utility text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility text-label-sm {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+@utility section-divider {
+  border-top: 1px solid var(--theme-outline-variant);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@utility animate-marquee {
+  display: flex;
+  animation: marquee 60s linear infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 html {
@@ -59,16 +120,8 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   background: var(--theme-surface);
-  color: var(--theme-content);
+  color: var(--theme-on-surface);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-slide-up {
-  animation: slide-up 0.6s ease-out forwards;
 }

@@ -2,20 +2,32 @@ import { personal } from "../data/portfolio"
 
 export function Footer() {
   return (
-    <footer className="py-8 px-6 border-t border-edge">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-content-muted text-sm">
-          &copy; {new Date().getFullYear()} {personal.name}. Built with React &amp; Tailwind CSS.
-        </p>
-        <a
-          href="#hero"
-          className="w-9 h-9 bg-surface-tertiary/50 border border-edge flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
-          aria-label="Back to top"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </a>
+    <footer className="w-full py-24 border-t border-outline-variant bg-surface">
+      <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 max-w-container-max mx-auto gap-12">
+        <div className="text-[10px] font-bold text-on-surface/30 tracking-[0.2em] uppercase">
+          &copy; {new Date().getFullYear()} DESIGNED FOR PERFORMANCE.
+        </div>
+        <div className="flex gap-12 text-[10px] font-bold tracking-[0.2em] uppercase">
+          <a
+            href={personal.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-on-surface/50 hover:text-primary transition-colors"
+          >
+            GITHUB
+          </a>
+          <a
+            href={personal.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-on-surface/50 hover:text-primary transition-colors"
+          >
+            LINKEDIN
+          </a>
+          <a href="#" className="text-on-surface/50 hover:text-primary transition-colors">
+            SOURCE
+          </a>
+        </div>
       </div>
     </footer>
   )
