@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: var(--theme-surface);
+  --color-surface-secondary: var(--theme-surface-secondary);
+  --color-surface-tertiary: var(--theme-surface-tertiary);
+  --color-content: var(--theme-content);
+  --color-content-secondary: var(--theme-content-secondary);
+  --color-content-muted: var(--theme-content-muted);
+  --color-edge: var(--theme-edge);
+  --color-accent: var(--theme-accent);
+  --color-accent-light: var(--theme-accent-light);
+  --color-accent-dark: var(--theme-accent-dark);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --theme-surface: #132a13;
+  --theme-surface-secondary: #1a3a1a;
+  --theme-surface-tertiary: #234523;
+  --theme-content: #ecf39e;
+  --theme-content-secondary: #b0c080;
+  --theme-content-muted: #5a7a4a;
+  --theme-edge: #31572c;
+  --theme-accent: #4f772d;
+  --theme-accent-light: #90a955;
+  --theme-accent-dark: #31572c;
+}
+
+:root.light {
+  --theme-surface: #f5f7f0;
+  --theme-surface-secondary: #ffffff;
+  --theme-surface-tertiary: #ecf39e;
+  --theme-content: #132a13;
+  --theme-content-secondary: #31572c;
+  --theme-content-muted: #5a7a4a;
+  --theme-edge: #d0d8c0;
+  --theme-accent: #4f772d;
+  --theme-accent-light: #31572c;
+  --theme-accent-dark: #132a13;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--theme-surface);
+  color: var(--theme-content);
+  transition: background-color 0.3s, color 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
