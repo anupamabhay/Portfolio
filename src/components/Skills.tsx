@@ -2,10 +2,14 @@ import { useInView } from "../hooks/useInView"
 import { skills } from "../data/portfolio"
 
 const categoryColors: Record<string, string> = {
-  Frontend: "border-sky-500/40 bg-sky-500/20 text-sky-600 dark:text-sky-300",
-  Backend: "border-emerald-500/40 bg-emerald-500/20 text-emerald-600 dark:text-emerald-300",
-  "DevOps & Cloud": "border-orange-500/40 bg-orange-500/20 text-orange-600 dark:text-orange-300",
-  Tools: "border-purple-500/40 bg-purple-500/20 text-purple-600 dark:text-purple-300",
+  Frontend:
+    "border-sky-300 bg-sky-100 text-sky-700 dark:border-sky-500/40 dark:bg-sky-500/20 dark:text-sky-300",
+  Backend:
+    "border-emerald-300 bg-emerald-100 text-emerald-700 dark:border-emerald-500/40 dark:bg-emerald-500/20 dark:text-emerald-300",
+  "DevOps & Cloud":
+    "border-orange-300 bg-orange-100 text-orange-700 dark:border-orange-500/40 dark:bg-orange-500/20 dark:text-orange-300",
+  Tools:
+    "border-purple-300 bg-purple-100 text-purple-700 dark:border-purple-500/40 dark:bg-purple-500/20 dark:text-purple-300",
 }
 
 export function Skills() {
@@ -25,14 +29,14 @@ export function Skills() {
           {Object.entries(skills).map(([category, items]) => (
             <div
               key={category}
-              className="p-6 rounded-xl border border-edge bg-surface-secondary shadow-sm"
+              className="p-6 border border-edge bg-surface-secondary shadow-sm"
             >
               <h3 className="text-content font-semibold mb-4">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {items.map((skill, i) => (
                   <span
                     key={skill}
-                    className={`px-3 py-1.5 text-sm rounded-lg border transition-all hover:scale-105 ${
+                    className={`px-3 py-1.5 text-sm border transition-all hover:scale-105 ${
                       categoryColors[category] || "border-edge text-content-secondary"
                     }`}
                     style={{ animationDelay: `${i * 50}ms` }}

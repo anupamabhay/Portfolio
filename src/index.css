@@ -16,13 +16,13 @@
 
 :root {
   color-scheme: light dark;
-  --theme-surface: #1c1a19;
-  --theme-surface-secondary: #252322;
-  --theme-surface-tertiary: #333130;
+  --theme-surface: #121212;
+  --theme-surface-secondary: #1e1e1e;
+  --theme-surface-tertiary: #2c2c2c;
   --theme-content: #fffcf2;
   --theme-content-secondary: #ccc5b9;
   --theme-content-muted: #8a8580;
-  --theme-edge: #333130;
+  --theme-edge: #2c2c2c;
   --theme-accent: #ff6d1f;
   --theme-accent-light: #ff8540;
   --theme-accent-dark: #d95a14;
@@ -32,7 +32,7 @@
   --theme-surface: #f7f5f0;
   --theme-surface-secondary: #ffffff;
   --theme-surface-tertiary: #e6e2da;
-  --theme-content: #1c1a19;
+  --theme-content: #121212;
   --theme-content-secondary: #403d39;
   --theme-content-muted: #8a8580;
   --theme-edge: #e6e2da;

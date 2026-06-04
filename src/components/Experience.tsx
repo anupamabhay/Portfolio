@@ -14,17 +14,17 @@ export function Experience() {
           My professional journey so far
         </p>
 
-        <div className="relative max-w-4xl">
+        <div className="relative">
           <div className="hidden md:block absolute left-8 top-0 bottom-0 w-px bg-edge" />
 
           <div className="space-y-12">
             {experience.map((job, i) => (
               <div key={job.company} className="relative md:pl-20">
-                <div className="hidden md:flex absolute left-4 top-1 w-9 h-9 rounded-full bg-surface-secondary border border-edge items-center justify-center text-sm text-content-muted font-bold shadow-sm">
+                <div className="hidden md:flex absolute left-4 top-1 w-9 h-9 bg-surface-secondary border border-edge items-center justify-center text-sm text-content-muted font-bold shadow-sm">
                   {i + 1}
                 </div>
 
-                <div className="p-6 rounded-xl border border-edge bg-surface-secondary shadow-sm hover:border-accent/30 transition-all">
+                <div className="p-6 border border-edge bg-surface-secondary shadow-sm hover:border-accent/30 transition-all">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-4">
                     <div>
                       <h3 className="text-content font-semibold text-lg">

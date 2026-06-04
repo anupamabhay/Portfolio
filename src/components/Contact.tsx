@@ -32,7 +32,7 @@ export function Contact() {
                     name="name"
                     type="text"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors"
+                    className="w-full px-4 py-3 bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors"
                     placeholder="Your name"
                   />
                 </div>
@@ -45,7 +45,7 @@ export function Contact() {
                     name="email"
                     type="email"
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors"
+                    className="w-full px-4 py-3 bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -58,13 +58,13 @@ export function Contact() {
                     name="message"
                     required
                     rows={5}
-                    className="w-full px-4 py-3 rounded-xl bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-surface-secondary border border-edge text-content placeholder:text-content-muted/50 shadow-sm focus:outline-none focus:border-accent transition-colors resize-none"
                     placeholder="Your message..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 rounded-xl bg-accent hover:bg-accent-dark text-white font-medium transition-all hover:shadow-lg hover:shadow-accent/25"
+                  className="w-full px-8 py-3 bg-accent hover:bg-accent-dark text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                 >
                   Send Message
                 </button>
@@ -87,7 +87,7 @@ export function Contact() {
                   href={personal.social.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 rounded-xl bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all"
+                  className="w-11 h-11 bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                   aria-label="GitHub"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,7 @@ export function Contact() {
                   href={personal.social.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 rounded-xl bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all"
+                  className="w-11 h-11 bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export function Contact() {
                   href={personal.social.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 rounded-xl bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all"
+                  className="w-11 h-11 bg-surface-secondary border border-edge shadow-sm flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
                   aria-label="Twitter"
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -9,7 +9,7 @@ export function Footer() {
         </p>
         <a
           href="#hero"
-          className="w-9 h-9 rounded-lg bg-surface-tertiary/50 border border-edge flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all"
+          className="w-9 h-9 bg-surface-tertiary/50 border border-edge flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           aria-label="Back to top"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

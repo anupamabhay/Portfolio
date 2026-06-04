@@ -19,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-accent/4 via-transparent to-surface pointer-events-none" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-edge bg-surface-secondary text-sm text-content-secondary mb-8 shadow-sm">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-edge bg-surface-secondary text-sm text-content-secondary mb-8 shadow-sm">
           <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
@@ -41,13 +41,13 @@ export function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
             href="#contact"
-            className="px-8 py-3 rounded-xl bg-accent hover:bg-accent-dark text-white font-medium transition-all hover:shadow-lg hover:shadow-accent/25"
+            className="px-8 py-3 bg-accent hover:bg-accent-dark text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-accent/25 hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           >
             Get In Touch
           </a>
           <a
             href="#projects"
-            className="px-8 py-3 rounded-xl border border-edge text-content-secondary hover:text-content hover:border-accent font-medium transition-all"
+            className="px-8 py-3 border border-edge text-content-secondary hover:text-content hover:border-accent hover:bg-accent/5 font-medium transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
           >
             View My Work
           </a>

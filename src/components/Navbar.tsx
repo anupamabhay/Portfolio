@@ -62,14 +62,14 @@ function ThemeToggle() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="w-9 h-9 flex items-center justify-center text-content-secondary hover:text-content transition-colors rounded-lg"
+        className="w-9 h-9 flex items-center justify-center text-content-secondary hover:text-content transition-colors"
         aria-label="Switch theme"
         aria-pressed={resolved === "dark"}
       >
         {iconMap[theme]}
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-36 rounded-xl border border-edge bg-surface shadow-xl py-1 z-50">
+        <div className="absolute right-0 top-full mt-2 w-36 border border-edge bg-surface shadow-xl py-1 z-50">
           {options.map((opt) => (
             <button
               key={opt.value}
