@@ -14,12 +14,12 @@ export function Experience() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
           <div className="lg:col-span-4 lg:sticky lg:top-32 h-fit">
             <span className="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">
-              03 / CHRONOLOGY
+              &lt;&gt; 03. EXPERIENCE
             </span>
-            <h2 className="text-headline-lg text-on-surface mb-8">Engineering Trajectory</h2>
+            <h2 className="text-headline-lg text-on-surface mb-8">Where I&apos;ve worked</h2>
             <p className="text-body-md text-on-surface/50 leading-relaxed">
-              A decade of scaling systems and leading high-impact technical teams at the
-              intersection of performance and reliability.
+              A decade of building things that scale and leading teams
+              at the intersection of performance and reliability.
             </p>
           </div>
 

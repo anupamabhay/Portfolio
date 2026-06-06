@@ -1,108 +1,90 @@
 export const personal = {
-  name: "Alex Chen",
-  title: "Senior Software Engineer",
-  tagline: "Senior Software Engineer specializing in distributed systems, low-latency architectures, and developer tooling. Building the invisible infrastructure that powers modern high-performance enterprises.",
-  email: "hello@architect.io",
-  location: "San Francisco, CA",
-  resumeUrl: "#",
-  avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+  name: "Anupam Abhay",
+  title: "Software Developer",
+  tagline: "Software Developer specializing in building performant, scalable applications with clean architecture. Turning complex problems into elegant, maintainable solutions.",
+  email: "anupamabhay2001@gmail.com",
+  resumeUrl: "https://docs.google.com/document/d/1Y8qQb-UMlyVz_Nncnn8RGQ2OF56Ldf7k/edit?usp=sharing&ouid=112329673717758319134&rtpof=true&sd=true",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/anupamabhay",
+    linkedin: "https://linkedin.com/in/anupamabhay",
   },
 }
 
 export const about = {
   bio: [
-    "I approach engineering as the art of building digital foundations that are both invisible and indestructible. My focus lies at the intersection of distributed systems and high-performance computing, where every millisecond of latency and every byte of overhead matters. I believe that great infrastructure shouldn't just work; it should empower the entire organization to move faster with confidence.",
-    "As a Principal Systems Engineer, I specialize in architecting zero-copy protocols, optimizing kernel-level interactions, and designing resilient microservices meshes. My work is driven by the challenge of scaling systems to handle millions of concurrent events while maintaining strict consistency and reliability across global edge networks.",
+    "I build backend systems that handle real traffic without breaking a sweat. My work sits at the intersection of microservices, GenAI, and high-throughput APIs — the kind that have to stay fast while getting smarter. I've built order infrastructure processing 2,000+ daily deliveries and real-time AI avatars serving 500+ concurrent sessions. Every millisecond, every edge case, every query matters.",
+    "At GoGiver AI, I work with Spring Boot microservices and Python LLM orchestration to power interactive AI avatars. Before that, I built the order lifecycle and delivery tracking pipeline at Speedbae. I use Java, Spring Boot, Kafka, Redis, and whatever else it takes to ship reliable systems. I care about clean architecture, solid test coverage, and code that doesn't need a tour guide.",
   ],
   stats: [
-    { label: "Years Experience", value: "10+" },
-    { label: "Projects Delivered", value: "50+" },
-    { label: "Technologies Used", value: "25+" },
-    { label: "Happy Clients", value: "20+" },
+    { label: "Years Experience", value: "2+" },
+    { label: "Concurrent Sessions", value: "500+" },
+    { label: "Daily Orders", value: "2K+" },
+    { label: "API Uptime", value: "99.5%" },
   ],
 }
 
 export const techStack = [
-  "RUST", "GO", "KUBERNETES", "TYPESCRIPT", "AWS",
-  "GRPC", "DOCKER", "TERRAFORM", "POSTGRESQL", "REDIS",
+  "JAVA", "PYTHON", "JAVASCRIPT", "C++", "SPRING BOOT", "SPRING SECURITY",
+  "HIBERNATE/JPA", "MICROSERVICES", "REST APIS", "WEBSOCKET", "KAFKA",
+  "LLMS", "OPENAI", "CLAUDE", "GEMINI", "PYDANTIC AI", "RAG PIPELINES",
+  "PROMPT ENGINEERING", "PYTORCH", "TENSORFLOW", "OPENCV",
+  "MODEL EVALUATION", "SCIKIT-LEARN", "MYSQL",
+  "POSTGRESQL", "SQL SERVER", "CASSANDRA", "REDIS", "DOCKER", "KUBERNETES", "JENKINS",
+  "CI/CD", "AWS", "GCP", "GIT", "BITBUCKET", "JUNIT", "MOCKITO", "SWAGGER",
+  "POSTMAN", "INSOMNIA", "JIRA", "AGILE/SCRUM", "REACT NATIVE",
+  "REACT.JS", "HTML5", "CSS3",
 ]
-
-export const skills = {
-  Frontend: [
-    "React", "TypeScript", "Next.js", "Tailwind CSS", "Redux",
-    "React Query", "Storybook", "Vitest",
-  ],
-  Backend: [
-    "Node.js", "Express", "PostgreSQL", "MongoDB", "Redis",
-    "GraphQL", "REST APIs", "Prisma",
-  ],
-  "DevOps & Cloud": [
-    "AWS", "Docker", "GitHub Actions", "Terraform",
-    "Kubernetes", "Nginx",
-  ],
-  Tools: [
-    "Git", "ESLint", "Prettier", "Webpack", "Vite",
-    "Figma", "Notion", "Linear",
-  ],
-}
 
 export const experience = [
   {
-    company: "Neoscale",
-    role: "Principal Systems Engineer",
-    period: "2021 — NOW",
-    location: "San Francisco, CA",
+    company: "GoGiver AI Private Limited (AssistArmy)",
+    role: "Backend Developer",
+    period: "Feb 2025 — Present",
     highlights: [
-      "Architecting core infrastructure for a global edge network. Reduced latency by 40% through custom implementation of zero-copy protocols in Rust.",
-      "Mentoring a team of 12 distributed systems engineers.",
+      "Engineered a hybrid backend architecture with Spring Boot microservices and Python LLM orchestration, powering real-time AI avatars across 500+ concurrent sessions.",
+      "Implemented Java WebSocket module with Spring Security (JWT, RBAC), 80+ JUnit tests, and 99.5%+ API uptime.",
     ],
-    tags: ["#DistributedSystems", "#Rust", "#Infrastructure"],
+    tags: ["#Java", "#SpringBoot", "#Python", "#LLMs", "#GenAI", "#WebSocket"],
   },
   {
-    company: "Velocity Data",
-    role: "Lead Backend Architect",
-    period: "2018 — 2021",
-    location: "Remote",
+    company: "Speedbae Digital Private Limited",
+    role: "Backend Developer",
+    period: "Jan 2024 — Dec 2024",
     highlights: [
-      "Built and scaled a real-time analytics platform handling 500k queries per second.",
-      "Migrated legacy monolith to a Kubernetes-native microservices mesh using Go and gRPC.",
+      "Built an end-to-end Order Lifecycle service processing 2,000+ daily orders; reduced order API p95 latency from 800ms to 180ms.",
+      "Engineered inventory reservation service handling 5,000+ SKUs and a real-time delivery tracking pipeline on Cassandra.",
     ],
-    tags: ["#GoLang", "#K8s", "#CloudNative"],
+    tags: ["#Java", "#SpringBoot", "#Microservices", "#Cassandra", "#React"],
   },
   {
-    company: "Quantify Solutions",
-    role: "Software Engineer",
-    period: "2015 — 2018",
-    location: "Los Angeles, CA",
+    company: "Speedbae Digital Private Limited",
+    role: "Backend Intern",
+    period: "July 2023 — Dec 2023",
     highlights: [
-      "Developed core algorithmic trading infrastructure using C++.",
-      "Optimized order execution pipelines for low-latency market access.",
+      "Built CRUD modules and data validations for checkout and order placement workflows.",
+      "Optimized MySQL schemas, refactored inefficient queries, and generated API documentation using Swagger.",
     ],
-    tags: ["#C++", "#FinTech", "#HFT"],
+    tags: ["#Java", "#SpringBoot", "#MySQL", "#Swagger"],
   },
 ]
 
 export const projects = [
   {
-    title: "Vortex Engine",
-    description: "High-throughput event processing engine capable of handling 2M+ events/sec with sub-millisecond latency. Built for real-time financial data streaming.",
-    tech: ["Rust", "WASM"],
+    title: "AR Product Visualization Pipelines",
+    description: "AI-powered computer vision pipeline for realistic 2D product visualization. Uses SAM for zero-shot wall segmentation and Stable Diffusion with ControlNet for depth-aware image generation.",
+    tech: ["Python", "PyTorch", "OpenCV", "Stable Diffusion"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=375&fit=crop",
-    github: "https://github.com",
+    github: "https://github.com/anupamabhay/AR_Preview",
     live: null,
-    tag: "RUST / WASM",
+    tag: "COMPUTER VISION",
   },
   {
-    title: "Lumina DB",
-    description: "A distributed key-value store emphasizing strong consistency and horizontal scalability across multiple availability zones.",
-    tech: ["Go", "etcd"],
+    title: "Agent Zero",
+    description: "Autonomous AI assistant framework built on a cyclic LangGraph architecture with multi-model orchestration (Gemini, Claude, GPT) and Docker-sandboxed execution.",
+    tech: ["Python", "LangGraph", "Docker", "Pydantic"],
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=375&fit=crop",
-    github: "https://github.com",
+    github: "https://github.com/anupamabhay/agent-zero",
     live: null,
-    tag: "GO / ETCD",
+    tag: "AUTONOMOUS AI",
   },
 ]

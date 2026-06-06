@@ -7,7 +7,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="px-6 md:px-12 max-w-container-max mx-auto py-section-gap"
+      className="px-6 md:px-12 max-w-container-max mx-auto py-24"
       ref={ref}
     >
       <div
@@ -17,9 +17,9 @@ export function About() {
       >
         <div className="lg:col-span-4">
           <span className="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">
-            01 / ABOUT
+            &lt;&gt; 01. ABOUT
           </span>
-          <h2 className="text-headline-lg text-on-surface">Philosophy &amp; Approach</h2>
+          <h2 className="text-headline-lg text-on-surface">A bit about me</h2>
         </div>
         <div className="lg:col-span-8 space-y-6">
           {about.bio.map((paragraph, i) => (
