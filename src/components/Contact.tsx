@@ -29,7 +29,7 @@ export function Contact() {
   return (
     <section id="contact" className="section-divider bg-surface-container-lowest" ref={ref}>
       <div
-        className={`px-6 md:px-12 max-w-container-max mx-auto flex flex-col justify-center py-20 transition-all duration-700 ${
+        className={`px-6 md:px-12 max-w-container-max mx-auto flex flex-col justify-center py-24 transition-all duration-700 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >

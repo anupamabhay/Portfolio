@@ -29,6 +29,19 @@ export function About() {
           ))}
         </div>
       </div>
+      <div className="flex items-center justify-center gap-8 mt-20">
+        <span className="flex-1 max-w-32 h-px bg-on-surface/20" />
+        <svg
+          className="w-[18px] h-[18px] text-primary animate-[breathe_3s_ease-in-out_infinite]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 9l7 7 7-7" />
+        </svg>
+        <span className="flex-1 max-w-32 h-px bg-on-surface/20" />
+      </div>
     </section>
   )
 }
