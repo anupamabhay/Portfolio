@@ -13,7 +13,7 @@ export const personal = {
 export const about = {
   bio: [
     "I build backend systems that handle real traffic without breaking a sweat. My work sits at the intersection of microservices, GenAI, and high-throughput APIs — the kind that have to stay fast while getting smarter. I've built order infrastructure processing 2,000+ daily deliveries and real-time AI avatars serving 500+ concurrent sessions. Every millisecond, every edge case, every query matters.",
-    "At GoGiver AI, I work with Spring Boot microservices and Python LLM orchestration to power interactive AI avatars. Before that, I built the order lifecycle and delivery tracking pipeline at Speedbae. I use Java, Spring Boot, Kafka, Redis, and whatever else it takes to ship reliable systems. I care about clean architecture, solid test coverage, and code that doesn't need a tour guide.",
+    "Beyond the screen, I like most things that reward a little obsession like chasing rank in PC games, playing volleyball or cricket on weekends, and sinking into a good anime arc with coffee in hand. I treat my hobbies and my code the same way: I care about the small stuff, I get curious about how things work under the hood, and I call it a day when the work feels right.",
   ],
   stats: [
     { label: "Years Experience", value: "2+" },
@@ -26,12 +26,12 @@ export const about = {
 export const techStack = [
   "JAVA", "PYTHON", "JAVASCRIPT", "C++", "SPRING BOOT", "SPRING SECURITY",
   "HIBERNATE/JPA", "MICROSERVICES", "REST APIS", "WEBSOCKET", "KAFKA",
-  "LLMS", "OPENAI", "CLAUDE", "GEMINI", "PYDANTIC AI", "RAG PIPELINES",
+  "LLMS", "OPENAI, CLAUDE, GEMINI", "PYDANTIC AI", "RAG PIPELINES",
   "PROMPT ENGINEERING", "PYTORCH", "TENSORFLOW", "OPENCV",
   "MODEL EVALUATION", "SCIKIT-LEARN", "MYSQL",
   "POSTGRESQL", "SQL SERVER", "CASSANDRA", "REDIS", "DOCKER", "KUBERNETES", "JENKINS",
-  "CI/CD", "AWS", "GCP", "GIT", "BITBUCKET", "JUNIT", "MOCKITO", "SWAGGER",
-  "POSTMAN", "INSOMNIA", "JIRA", "AGILE/SCRUM", "REACT NATIVE",
+  "CI-CD", "AWS", "GCP", "GIT", "BITBUCKET", "JUNIT", "MOCKITO", "SWAGGER",
+  "POSTMAN", "JIRA", "AGILE-SCRUM", "REACT NATIVE",
   "REACT.JS", "HTML5", "CSS3",
 ]
 
@@ -44,7 +44,7 @@ export const experience = [
       "Engineered a hybrid backend architecture with Spring Boot microservices and Python LLM orchestration, powering real-time AI avatars across 500+ concurrent sessions.",
       "Implemented Java WebSocket module with Spring Security (JWT, RBAC), 80+ JUnit tests, and 99.5%+ API uptime.",
     ],
-    tags: ["#Java", "#SpringBoot", "#Python", "#LLMs", "#GenAI", "#WebSocket"],
+    tags: ["#Java", "#SpringBoot", "#Python", "#AI", "#LLMs", "#WebSocket", "#TensorFlow", "#Pydantic AI"],
   },
   {
     company: "Speedbae Digital Private Limited",

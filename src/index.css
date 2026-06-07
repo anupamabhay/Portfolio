@@ -93,7 +93,8 @@
 
 @utility animate-marquee {
   display: flex;
-  animation: marquee 36s linear infinite;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
 }
 
 @keyframes blink {
