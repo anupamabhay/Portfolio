@@ -7,7 +7,7 @@ export function Experience() {
   return (
     <section id="experience" className="section-divider bg-transparent" ref={ref}>
       <div
-        className={`px-6 md:px-12 max-w-container-max mx-auto py-section-gap transition-all duration-700 ${
+        className={`px-6 md:px-12 max-w-container-max mx-auto py-24 transition-all duration-700 ${
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
