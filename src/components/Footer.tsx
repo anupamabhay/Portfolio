@@ -1,21 +1,40 @@
-import { personal } from "../data/portfolio"
+import { useEffect, useState } from "react"
 
 export function Footer() {
+  const [time, setTime] = useState(() => new Date())
+
+  useEffect(() => {
+    const timer = setInterval(() => setTime(new Date()), 60000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const formatted = time.toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  })
+
+  const clock = time.toLocaleTimeString("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "Asia/Kolkata",
+  })
+
   return (
-    <footer className="py-8 px-6 border-t border-edge">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-content-muted text-sm">
-          &copy; {new Date().getFullYear()} {personal.name}. Built with React &amp; Tailwind CSS.
-        </p>
-        <a
-          href="#hero"
-          className="w-9 h-9 rounded-lg bg-surface-tertiary/50 border border-edge flex items-center justify-center text-content-muted hover:text-content hover:border-accent transition-all"
-          aria-label="Back to top"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </a>
+    <footer className="w-full py-8 border-t border-outline-variant/[0.07] bg-surface">
+      <div className="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 max-w-container-max mx-auto gap-12">
+        <div className="flex items-center gap-2 text-[10px] font-bold text-on-surface/30 tracking-[0.2em] uppercase">
+          <span className="relative inline-flex items-center justify-center h-3 w-3">
+            <span className="absolute inset-0 rounded-full bg-emerald-500 animate-[breathe_3s_ease-in-out_infinite]" />
+            <span className="relative h-1.5 w-1.5 rounded-full bg-emerald-500 animate-[breathe_3s_ease-in-out_infinite]" />
+          </span>
+          {formatted} · {clock} IST
+        </div>
+        <div className="text-[10px] font-bold text-on-surface/30 tracking-[0.2em] uppercase">
+          &copy; {new Date().getFullYear()} Anupam Abhay
+        </div>
       </div>
     </footer>
   )

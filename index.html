@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script nonce="fouc">
+      (function() {
+        var theme = localStorage.getItem("portfolio-theme");
+        var dark = theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+        document.documentElement.classList.toggle("light", !dark);
+      })();
+    </script>
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; form-action mailto:; base-uri 'self'"
+      content="default-src 'self'; script-src 'self' 'nonce-fouc'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; connect-src 'self'; form-action mailto:; base-uri 'self'"
     />
-    <meta name="theme-color" content="#132a13" />
+    <meta name="theme-color" content="#252422" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>Alex Chen | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Anupam | Software Developer</title>
   </head>
   <body>
     <div id="root"></div>

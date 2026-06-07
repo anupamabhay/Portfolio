@@ -1,80 +1,60 @@
-import { useInView } from "../hooks/useInView"
 import { projects } from "../data/portfolio"
+import { useInView } from "../hooks/useInView"
 
 export function Projects() {
   const { ref, inView } = useInView()
 
   return (
-    <section id="projects" className="py-24 px-6 bg-surface-secondary/50" ref={ref}>
-      <div className={`max-w-6xl mx-auto transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <h2 className="text-3xl sm:text-4xl font-bold text-content mb-4">
-          Featured <span className="text-accent">Projects</span>
-        </h2>
-        <p className="text-content-muted text-sm mb-16 max-w-md">
-          Some things I've built
-        </p>
+    <section
+      id="projects"
+      className="px-6 md:px-12 max-w-container-max mx-auto py-24"
+      ref={ref}
+    >
+      <div
+        className={`transition-all duration-700 ${
+          inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="mb-24">
+          <span className="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">
+            &lt;&gt; 02. WORK
+          </span>
+          <h2 className="text-headline-lg text-on-surface">Things I&apos;ve built</h2>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, i) => (
-            <div
-              key={project.title}
-              className="group rounded-xl border border-edge bg-surface-tertiary/30 overflow-hidden hover:border-accent/30 transition-all"
-              style={{ animationDelay: `${i * 100}ms` }}
-            >
-              <div className="relative h-48 overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
+          {projects.map((project) => (
+            <div key={project.title} className="group flex flex-col h-full">
+              <div className="aspect-[16/9] overflow-hidden bg-surface-container-low mb-6 relative">
                 <img
-                  src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000"
+                  src={project.image}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent" />
+                <div className="absolute bottom-6 left-6 text-[9px] font-bold text-white bg-black/60 backdrop-blur-md px-4 py-2 tracking-widest uppercase">
+                  {project.tag || project.tech.join(" / ")}
+                </div>
               </div>
-
-              <div className="p-5">
-                <h3 className="text-content font-semibold mb-2">
+              <div className="flex flex-col flex-1 space-y-4">
+                <h3 className="text-headline-md text-on-surface group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-content-secondary text-sm leading-relaxed mb-4 line-clamp-2">
+                <p className="text-body-md text-on-surface/60 leading-relaxed max-w-lg flex-1">
                   {project.description}
                 </p>
-
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  {project.tech.map((t) => (
-                    <span
-                      key={t}
-                      className="px-2 py-0.5 text-xs rounded-md bg-accent/10 text-accent-light"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex gap-3">
+                <div className="pt-4">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-content-muted hover:text-content transition-colors flex items-center gap-1.5"
+                    className="group/link inline-flex items-center gap-3 text-[11px] font-bold tracking-widest uppercase"
                   >
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                     <span className="relative text-on-surface transition-colors duration-300 group-hover/link:text-on-surface after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 group-hover/link:after:w-[40%] after:bg-primary after:transition-all after:duration-300">READ CASE STUDY</span>
+                    <svg className="w-[18px] h-[18px] text-on-surface/40 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                    Code
                   </a>
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-content-muted hover:text-content transition-colors flex items-center gap-1.5"
-                    >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                      Live
-                    </a>
-                  )}
                 </div>
               </div>
             </div>

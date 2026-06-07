@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHITECT.IO | Senior Software Engineer Portfolio</title>
+<script type="text/javascript" nonce="7a9324b416804d539e40f2f57aa" src="//local.adguard.org?ts=1780582306441&amp;type=content-script&amp;dmn=contribution.usercontent.google.com&amp;url=https%3A%2F%2Fcontribution.usercontent.google.com%2Fdownload%3Fc%3DCgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2YyNGYzN2VmMDQ0MjQ0MmJhMjgyNWRkYzJmYTAxMTBkEgsSBxCCu9zB4xAYAZIBIwoKcHJvamVjdF9pZBIVQhM4NzYwODA4NTI4MzY0OTg2NzAw%26filename%3D%26opi%3D89354086&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="7a9324b416804d539e40f2f57aa" src="//local.adguard.org?ts=1780582306441&amp;name=AdGuard%20Extra&amp;type=user-script"></script><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #131314;
+            color: #e5e2e3;
+            overflow-x: hidden;
+            font-family: 'Sora', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 60s linear infinite;
+        }
+        .terminal-cursor {
+            display: inline-block;
+            width: 6px;
+            height: 1.1em;
+            background-color: #ff6d1f;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .section-divider {
+            border-top: 1px solid #353436;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#ffb596",
+                    "surface-container-lowest": "#0e0e0f",
+                    "secondary-container": "#474649",
+                    "surface-container-highest": "#353436",
+                    "primary-container": "#ff6d1f",
+                    "on-surface-variant": "#e1bfb2",
+                    "secondary-fixed": "#e4e2e4",
+                    "on-primary": "#581e00",
+                    "on-surface": "#e5e2e3",
+                    "secondary-fixed-dim": "#c8c6c8",
+                    "surface-container-high": "#2a2a2b",
+                    "on-background": "#e5e2e3",
+                    "surface-dim": "#131314",
+                    "on-error-container": "#ffdad6",
+                    "surface-tint": "#ffb596",
+                    "on-tertiary-fixed": "#1b1b1e",
+                    "on-error": "#690005",
+                    "tertiary-fixed-dim": "#c8c6c9",
+                    "on-primary-fixed-variant": "#7d2d00",
+                    "secondary": "#c8c6c8",
+                    "surface-container-low": "#1c1b1c",
+                    "inverse-surface": "#e5e2e3",
+                    "tertiary-fixed": "#e4e2e5",
+                    "on-tertiary-container": "#323235",
+                    "inverse-on-surface": "#313031",
+                    "error-container": "#93000a",
+                    "primary": "#ff6d1f",
+                    "on-secondary-fixed": "#1b1b1d",
+                    "on-secondary": "#303032",
+                    "on-tertiary": "#303033",
+                    "on-tertiary-fixed-variant": "#47464a",
+                    "outline-variant": "#353436",
+                    "on-primary-fixed": "#360f00",
+                    "background": "#131314",
+                    "surface-variant": "#353436",
+                    "tertiary-container": "#9b999d",
+                    "surface-container": "#201f20",
+                    "surface-bright": "#3a393a",
+                    "error": "#ffb4ab",
+                    "outline": "#a98a7e",
+                    "surface": "#131314",
+                    "primary-fixed": "#ffdbcd",
+                    "on-secondary-fixed-variant": "#474649",
+                    "on-secondary-container": "#b6b4b7",
+                    "on-primary-container": "#5b1f00",
+                    "tertiary": "#c8c6c9",
+                    "inverse-primary": "#a43e00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "4px",
+                    "lg": "4px",
+                    "xl": "8px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "container-max": "1200px",
+                    "gutter": "48px",
+                    "section-gap": "160px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Sora"],
+                    "label-sm": ["Sora"],
+                    "label-md": ["Sora"],
+                    "body-lg": ["Sora"],
+                    "headline-xl": ["Sora"],
+                    "headline-lg": ["Sora"],
+                    "body-md": ["Sora"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["72px", {"lineHeight": "1.05", "letterSpacing": "-0.04em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface selection:bg-primary/20 font-body-md">
+<!-- TOP NAVIGATION -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="font-headline-lg text-[20px] font-bold tracking-tight text-on-surface">ARCHITECT<span class="text-primary">.</span>IO</div>
+<nav class="hidden md:flex items-center gap-12 text-[11px] font-semibold tracking-widest text-on-surface/60">
+<a class="hover:text-primary transition-colors" href="#projects">PROJECTS</a>
+<a class="hover:text-primary transition-colors" href="#stack">STACK</a>
+<a class="hover:text-primary transition-colors" href="#contact">CONTACT</a>
+</nav>
+<a class="text-[11px] font-bold text-on-primary bg-primary px-6 py-3 rounded-sm hover:brightness-110 transition-all uppercase tracking-widest" href="#">RESUME</a>
+</div>
+</header>
+<main>
+<!-- HERO SECTION -->
+<section class="min-h-screen flex flex-col justify-center px-margin-mobile md:px-gutter max-w-container-max mx-auto pt-24">
+<div class="max-w-4xl">
+<div class="inline-flex items-center gap-3 mb-12">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-40"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] text-on-surface/50 font-bold tracking-[0.2em] uppercase">Available for elite partnerships</span>
+</div>
+<h1 class="text-[48px] md:text-headline-xl text-on-surface mb-8">
+                    Engineering systems <br class="hidden md:block"/> for <span class="text-primary italic font-medium">scale.</span>
+</h1>
+<p class="text-body-lg text-on-surface/70 max-w-2xl mb-14 leading-relaxed">
+                    Senior Software Engineer specializing in distributed systems, low-latency architectures, and developer tooling. Building the invisible infrastructure that powers modern high-performance enterprises.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-white text-black font-bold text-[11px] px-10 py-5 rounded-sm hover:bg-primary hover:text-on-primary transition-all text-center tracking-widest uppercase" href="#projects">VIEW SYSTEMS</a>
+<a class="border border-outline-variant text-on-surface/80 font-bold text-[11px] px-10 py-5 rounded-sm hover:border-on-surface transition-all text-center tracking-widest uppercase" href="#">THE MANIFESTO</a>
+</div>
+</div>
+</section><section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap" id="about"><div class="grid grid-cols-1 lg:grid-cols-12 gap-20"><div class="lg:col-span-4"><span class="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">01 / ABOUT</span><h2 class="text-headline-lg text-on-surface">Philosophy &amp; Approach</h2></div><div class="lg:col-span-8 space-y-6"><p class="text-body-lg text-on-surface/70 leading-relaxed">I approach engineering as the art of building digital foundations that are both invisible and indestructible. My focus lies at the intersection of distributed systems and high-performance computing, where every millisecond of latency and every byte of overhead matters. I believe that great infrastructure shouldn't just work; it should empower the entire organization to move faster with confidence.</p><p class="text-body-lg text-on-surface/70 leading-relaxed">As a Principal Systems Engineer, I specialize in architecting zero-copy protocols, optimizing kernel-level interactions, and designing resilient microservices meshes. My work is driven by the challenge of scaling systems to handle millions of concurrent events while maintaining strict consistency and reliability across global edge networks.</p></div></div></section>
+<!-- TECHNICAL STACK MARQUEE -->
+<section class="py-12 bg-surface-container-lowest border-y border-outline-variant overflow-hidden" id="stack">
+<div class="animate-marquee whitespace-nowrap flex gap-20 items-center">
+<script>
+                    const tags = ["RUST", "GO", "KUBERNETES", "TYPESCRIPT", "AWS", "GRPC", "DOCKER", "TERRAFORM", "POSTGRESQL", "REDIS"];
+                    const content = tags.map(tag => `
+                        <div class="flex items-center gap-8">
+                            <span class="text-[10px] font-bold text-on-surface/20">/</span>
+                            <span class="text-[11px] text-on-surface/40 tracking-[0.3em] font-medium">${tag}</span>
+                        </div>
+                    `).join('');
+                    document.write(content + content + content + content);
+                </script>
+</div>
+</section>
+<!-- SELECTED WORKS -->
+<section class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24 gap-6">
+<div>
+<span class="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">02 / SELECTED WORKS</span>
+<h2 class="text-headline-lg text-on-surface">System Architecture</h2>
+</div>
+<a class="text-[11px] font-bold text-on-surface/40 hover:text-primary transition-colors border-b border-outline-variant pb-1 tracking-widest uppercase" href="#">VIEW ARCHIVE</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-32">
+<!-- Project 1 -->
+<div class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low mb-10 relative rounded-sm">
+<img alt="Vortex Engine infrastructure" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD13Xz83XgBu9WNpSarhk98qrHaUMd909e5E0SnhNvZ0LefKg5xoqw8tMQ18cOrLegIMclLKUaCGPhcbzmxZFWk18T_ZYUHpMRLv-whsFTlqD1JjRpxwfZX3lkom2_J9hKi8IaC6XYUj0wawFTgdXR64nFf9hLHZUeUHcKQEzMarLtdkkyjgy4AOLZlEkckBSgrjA6h1wiZ33MxVb8YorLZ_Vz0E7ikfrLsPJ-2wCLSJZ6mjUj15J0QdkzF7sK-2gEsj0Af0QgahD0"/>
+<div class="absolute bottom-6 left-6 text-[9px] font-bold text-white bg-black/60 backdrop-blur-md px-4 py-2 rounded-sm tracking-widest uppercase">RUST / WASM</div>
+</div>
+<div class="space-y-5">
+<h3 class="text-headline-md text-on-surface group-hover:text-primary transition-colors">Vortex Engine</h3>
+<p class="text-body-md text-on-surface/60 leading-relaxed max-w-lg">High-throughput event processing engine capable of handling 2M+ events/sec with sub-millisecond latency. Built for real-time financial data streaming.</p>
+<a class="inline-flex items-center gap-3 text-[11px] font-bold text-on-surface group/link pt-4 tracking-widest uppercase" href="#">
+                            READ CASE STUDY <span class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-low mb-10 relative rounded-sm">
+<img alt="Lumina DB nodes" class="w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXv2J_K_1Ofmpx8uPiCy4aFpqW69kID_RiLpTHB5xYc2IG2A1DYVHepqg3OXfhY6Rs_pnGtUCCPU2xcsSUZJvV2zttodrJmJkqRMJzIcChR7pW8Sdttq7p91Xr-QN_hlbP910O7SSKuzwb363Ku6sXPBPDOEcTTyT93b6EqXTjV6hBnLvsFwyLG7hMl1J7GlGqtlHHaQ-a6JIqmHTUFvdzp_asWVeGVGXy4KUYnkcQPRflRACgz_GCKaYQmp-XtFs8be1D9Fep4pI"/>
+<div class="absolute bottom-6 left-6 text-[9px] font-bold text-white bg-black/60 backdrop-blur-md px-4 py-2 rounded-sm tracking-widest uppercase">GO / ETCD</div>
+</div>
+<div class="space-y-5">
+<h3 class="text-headline-md text-on-surface group-hover:text-primary transition-colors">Lumina DB</h3>
+<p class="text-body-md text-on-surface/60 leading-relaxed max-w-lg">A distributed key-value store emphasizing strong consistency and horizontal scalability across multiple availability zones.</p>
+<a class="inline-flex items-center gap-3 text-[11px] font-bold text-on-surface group/link pt-4 tracking-widest uppercase" href="#">
+                            READ CASE STUDY <span class="material-symbols-outlined text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE TIMELINE -->
+<section class="section-divider bg-transparent">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
+<div class="lg:col-span-4 lg:sticky lg:top-32 h-fit">
+<span class="text-[10px] text-primary mb-4 block font-bold tracking-[0.2em] uppercase">03 / CHRONOLOGY</span>
+<h2 class="text-headline-lg text-on-surface mb-8">Engineering Trajectory</h2>
+<p class="text-body-md text-on-surface/50 leading-relaxed">A decade of scaling systems and leading high-impact technical teams at the intersection of performance and reliability.</p>
+</div>
+<div class="lg:col-span-8 space-y-24">
+<!-- Experience Item -->
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-6 sm:gap-12">
+<div class="text-[11px] font-bold tracking-widest text-on-surface/30 pt-1.5">2021 — NOW</div>
+<div class="sm:col-span-3 space-y-5">
+<h3 class="text-[20px] font-semibold text-on-surface">Principal Systems Engineer @ Neoscale</h3>
+<p class="text-body-md text-on-surface/60 leading-relaxed">Architecting core infrastructure for a global edge network. Reduced latency by 40% through custom implementation of zero-copy protocols in Rust. Mentoring a team of 12 distributed systems engineers.</p>
+<div class="flex flex-wrap gap-6 pt-2">
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+</div>
+</div>
+</div>
+<!-- Experience Item -->
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-6 sm:gap-12">
+<div class="text-[11px] font-bold tracking-widest text-on-surface/30 pt-1.5">2018 — 2021</div>
+<div class="sm:col-span-3 space-y-5">
+<h3 class="text-[20px] font-semibold text-on-surface">Lead Backend Architect @ Velocity Data</h3>
+<p class="text-body-md text-on-surface/60 leading-relaxed">Built and scaled a real-time analytics platform handling 500k queries per second. Migrated legacy monolith to a Kubernetes-native microservices mesh using Go and gRPC.</p>
+<div class="flex flex-wrap gap-6 pt-2">
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+</div>
+</div>
+</div>
+<!-- Experience Item -->
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-6 sm:gap-12">
+<div class="text-[11px] font-bold tracking-widest text-on-surface/30 pt-1.5">2015 — 2018</div>
+<div class="sm:col-span-3 space-y-5">
+<h3 class="text-[20px] font-semibold text-on-surface">Software Engineer @ Quantify Solutions</h3>
+<p class="text-body-md text-on-surface/60 leading-relaxed">Developed core algorithmic trading infrastructure using C++. Optimized order execution pipelines for low-latency market access.</p>
+<div class="flex flex-wrap gap-6 pt-2">
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+<span class="text-[11px] font-bold text-primary tracking-widest uppercase">03 / CHRONOLOGY</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="section-divider bg-surface-container-lowest" id="contact">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto py-section-gap">
+<div class="max-w-3xl mx-auto text-center">
+<span class="text-[10px] text-primary mb-8 block font-bold tracking-[0.2em] uppercase">04 / EXECUTION</span>
+<h2 class="text-[42px] md:text-5xl font-bold text-on-surface mb-12">Let's build the future of scale.</h2>
+<div class="flex flex-col items-center gap-10 mb-20">
+<div class="text-[18px] font-medium text-on-surface/90 flex items-center gap-3 bg-surface p-6 rounded-sm border border-outline-variant">
+<span class="text-primary font-bold">04 / EXECUTION</span>
+<span class="font-mono" id="terminal-text"></span><span class="terminal-cursor"></span>
+</div>
+<p class="text-body-md text-on-surface/50 max-w-lg leading-relaxed">Ready to discuss architecture, performance, or team leadership? Let's connect and engineer something extraordinary.</p>
+</div>
+<div class="flex flex-col md:flex-row justify-center gap-12 pt-12">
+<a class="group inline-flex items-center gap-4 text-[11px] font-bold text-on-surface hover:text-primary transition-all tracking-widest uppercase" href="mailto:hello@architect.io">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">04 / EXECUTION</span>
+                            HELLO@ARCHITECT.IO
+                        </a>
+<a class="group inline-flex items-center gap-4 text-[11px] font-bold text-on-surface hover:text-primary transition-all tracking-widest uppercase" href="#">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">04 / EXECUTION</span>
+                            GITHUB.COM/ARCHITECT-IO
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full py-24 border-t border-outline-variant bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-12">
+<div class="text-[10px] font-bold text-on-surface/30 tracking-[0.2em] uppercase">
+                © 2024 DESIGNED FOR PERFORMANCE.
+            </div>
+<div class="flex gap-12 text-[10px] font-bold tracking-[0.2em] uppercase">
+<a class="text-on-surface/50 hover:text-primary transition-colors" href="#">GITHUB</a>
+<a class="text-on-surface/50 hover:text-primary transition-colors" href="#">LINKEDIN</a>
+<a class="text-on-surface/50 hover:text-primary transition-colors" href="#">SOURCE</a>
+</div>
+</div>
+</footer>
+<script>
+        // Terminal text typing effect
+        const text = 'ssh architect@portfolio --cmd "hire_me"';
+        const terminalText = document.getElementById('terminal-text');
+        let i = 0;
+        terminalText.innerHTML = '';
+
+        function typeWriter() {
+            if (i < text.length) {
+                terminalText.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 40);
+            }
+        }
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    typeWriter();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.getElementById('contact'));
+
+        // Active nav state on scroll
+        window.addEventListener('scroll', () => {
+            const sections = ['projects', 'stack', 'contact'];
+            let current = '';
+            
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const sectionTop = element.offsetTop;
+                    if (pageYOffset >= sectionTop - 250) {
+                        current = section;
+                    }
+                }
+            });
+
+            document.querySelectorAll('header nav a').forEach(link => {
+                link.classList.remove('text-primary');
+                link.classList.add('text-on-surface/60');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.remove('text-on-surface/60');
+                    link.classList.add('text-primary');
+                }
+            });
+        });
+    </script>
+</body></html>

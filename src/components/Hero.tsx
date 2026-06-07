@@ -2,49 +2,42 @@ import { personal } from "../data/portfolio"
 
 export function Hero() {
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/8 via-transparent to-surface pointer-events-none" />
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-container-max mx-auto pt-24 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-[15%] left-[10%] w-[600px] h-[600px] rounded-full bg-primary/[0.06] blur-[140px] animate-[drift_25s_ease-in-out_infinite]" />
+        <div className="absolute bottom-[10%] right-[15%] w-[500px] h-[500px] rounded-full bg-primary/[0.04] blur-[120px] animate-[drift_30s_ease-in-out_infinite_reverse]" />
+      </div>
 
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/15 rounded-full blur-3xl animate-pulse-glow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/8 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
-
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-edge bg-surface-secondary text-sm text-content-secondary mb-8">
-          <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-          </svg>
-          <span className="leading-none">{personal.location}</span>
+      <div className="max-w-4xl">
+        <div className="inline-flex items-center gap-3 mb-12">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-40 animate-[breathe_3s_ease-in-out_infinite]" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-primary animate-[breathe_3s_ease-in-out_infinite]" />
+          </span>
+          <span className="text-[10px] text-on-surface/50 font-bold tracking-[0.2em] uppercase">
+            Available for opportunities
+          </span>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight mb-6">
-          Hi, I'm{" "}
-          <span className="bg-gradient-to-r from-accent to-accent-light bg-clip-text text-transparent">
-            {personal.name}
-          </span>
+        <h1 className="text-[48px] md:text-headline-xl text-on-surface mb-8">
+          Building software{" "}
+          <span className="text-primary">that works.</span>
         </h1>
 
-        <p className="text-xl sm:text-2xl text-content-secondary max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-body-lg text-on-surface/70 max-w-2xl mb-14 leading-relaxed">
           {personal.tagline}
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#contact"
-            className="px-8 py-3 rounded-xl bg-accent hover:bg-accent-dark text-white font-medium transition-all hover:shadow-lg hover:shadow-accent/25"
-          >
-            Get In Touch
-          </a>
-          <a
-            href="#projects"
-            className="px-8 py-3 rounded-xl border border-edge text-content-secondary hover:text-content hover:border-accent font-medium transition-all"
-          >
-            View My Work
-          </a>
-        </div>
+        <a
+          href="#about"
+          className="group inline-flex items-center gap-5 text-[10px] font-bold tracking-[0.2em] uppercase"
+        >
+          <span className="text-primary transition-colors duration-300">SCROLL TO EXPLORE</span>
+          <span className="w-16 h-px bg-on-surface/20 transition-colors duration-300" />
+          <svg className="w-[18px] h-[18px] text-primary animate-[breathe_3s_ease-in-out_infinite] transition-colors duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+            <path d="M5 9l7 7 7-7" />
+          </svg>
+        </a>
       </div>
     </section>
   )
