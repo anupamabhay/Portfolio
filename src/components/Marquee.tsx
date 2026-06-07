@@ -15,7 +15,7 @@ export function Marquee() {
   return (
     <div className="border-y border-outline-variant overflow-hidden">
       <div
-        className="animate-marquee whitespace-nowrap flex gap-20 items-center py-7"
+        className="animate-marquee whitespace-nowrap flex gap-20 items-center py-8"
         style={{ width: "max-content" }}
       >
         {items}

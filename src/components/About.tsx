@@ -7,7 +7,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="px-6 md:px-12 max-w-container-max mx-auto py-24"
+      className="px-6 md:px-12 max-w-container-max mx-auto py-24 min-h-[calc(100vh-80px)]"
       ref={ref}
     >
       <div
