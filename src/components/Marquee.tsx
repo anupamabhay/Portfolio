@@ -4,8 +4,8 @@ export function Marquee() {
   const items = Array.from({ length: 2 }, (_, i) =>
     techStack.map((tag) => (
       <div key={`${tag}-${i}`} className="flex items-center gap-8 shrink-0">
-        <span className="text-[10px] font-bold text-primary/40">/</span>
-        <span className="text-[11px] text-on-surface/40 tracking-[0.3em] font-medium">
+        <span className="text-[10px] font-bold text-primary">/</span>
+        <span className="text-[11px] text-on-surface/70 tracking-[0.3em] font-medium">
           {tag}
         </span>
       </div>
